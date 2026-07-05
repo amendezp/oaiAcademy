@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT for Finance Enablement Lab</title>
+    <meta
+      name="description"
+      content="A 10-minute companion site for demonstrating ChatGPT and ChatGPT for Sheets finance workflows."
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Finance Enablement Lab home">
+        <span class="brand-mark" aria-hidden="true">OA</span>
+        <span>
+          <strong>Finance Enablement Lab</strong>
+          <small>ChatGPT + Sheets demo guide</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="#demo-flow">Demo flow</a>
+        <a href="#files">Files</a>
+        <a href="#prompts">Prompts</a>
+        <a href="#dashboard">Dashboard</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero band">
+        <div class="hero-copy">
+          <p class="eyebrow">10-minute finance enablement segment</p>
+          <h1>From raw data to a verified leadership dashboard</h1>
+          <p class="hero-text">
+            Guide a Finance department through four live workflows: explain the raw data,
+            create a model, validate assumptions in-place, and turn the result into a polished
+            dashboard and leadership brief.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#demo-flow">Start the run of show</a>
+            <a class="button secondary" href="#prompts">Copy prompts</a>
+          </div>
+        </div>
+        <aside class="scenario-panel" aria-label="Demo scenario">
+          <span class="panel-label">Scenario</span>
+          <h2>ChillNest</h2>
+          <p>
+            A global online retailer sells cooling blankets. A heat wave lifted demand, but
+            profitable growth now varies by country.
+          </p>
+          <dl>
+            <div>
+              <dt>Audience</dt>
+              <dd>FP&A, Accounting, Treasury, RevOps, Finance leaders</dd>
+            </div>
+            <div>
+              <dt>Lesson</dt>
+              <dd>Growth is not the same as profitable growth.</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="band intro-grid" aria-label="Session principles">
+        <article class="principle">
+          <span class="step-chip">01</span>
+          <h2>Start with business context</h2>
+          <p>Participants see ChatGPT turn country-level performance into a finance story.</p>
+        </article>
+        <article class="principle">
+          <span class="step-chip">02</span>
+          <h2>Build in the spreadsheet</h2>
+          <p>ChatGPT for Sheets creates the model live from raw finance data.</p>
+        </article>
+        <article class="principle">
+          <span class="step-chip">03</span>
+          <h2>Verify before sharing</h2>
+          <p>Research-backed assumptions get confidence labels and human review status.</p>
+        </article>
+      </section>
+
+      <section class="band" id="demo-flow">
+        <div class="section-heading">
+          <p class="eyebrow">Run of show</p>
+          <h2>Four workflows, one story</h2>
+          <p>
+            Keep the demo moving. Each step has a clear learner takeaway and a copy-ready prompt.
+          </p>
+        </div>
+
+        <div class="workflow-list">
+          <article class="workflow-card">
+            <div class="workflow-time">2 min</div>
+            <div class="workflow-body">
+              <h3>1. Tell the story of the raw data</h3>
+              <p>
+                Upload the performance CSV and operating notes to ChatGPT. Ask for the finance
+                story, not a generic summary.
+              </p>
+              <ul>
+                <li>Separates revenue growth from profitable growth.</li>
+                <li>Surfaces country-level drivers and risks.</li>
+                <li>Flags anything that needs human verification.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="workflow-card">
+            <div class="workflow-time">3 min</div>
+            <div class="workflow-body">
+              <h3>2. Create the model live</h3>
+              <p>
+                Move to ChatGPT for Sheets. Use the raw country performance file to create a
+                forecast model inside the workbook.
+              </p>
+              <ul>
+                <li>Creates base, upside, and downside scenarios.</li>
+                <li>Models contribution profit, not just revenue.</li>
+                <li>Adds editable assumptions for each country.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="workflow-card">
+            <div class="workflow-time">2 min</div>
+            <div class="workflow-body">
+              <h3>3. Validate assumptions and refresh the model</h3>
+              <p>
+                Run an Assumption Validation + Model Refresh workflow directly in the same
+                workbook. Use research or connector access to update assumption inputs only.
+              </p>
+              <ul>
+                <li>Uses external sources for weather, FX, inflation, and interest-rate pressure.</li>
+                <li>Adds source links, confidence, and human review status.</li>
+                <li>Applies Finance house style so outputs are leadership-ready.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="workflow-card highlight-card">
+            <div class="workflow-time">3 min</div>
+            <div class="workflow-body">
+              <h3>4. Create the leadership dashboard</h3>
+              <p>
+                Ask ChatGPT for Sheets to create a scannable dashboard and a leadership-ready
+                brief from the refreshed model.
+              </p>
+              <ul>
+                <li>KPI cards show revenue, margin, contribution profit, and forecast risk.</li>
+                <li>Country ranking shows where to invest, test, or pause.</li>
+                <li>Review table makes accuracy and human judgment visible.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="band file-section" id="files">
+        <div class="section-heading">
+          <p class="eyebrow">Demo file pack</p>
+          <h2>Start with two files, create the rest live</h2>
+          <p>
+            The model and dashboard are produced during the demo. That keeps the session hands-on
+            and avoids the feeling of a prebuilt magic trick.
+          </p>
+        </div>
+
+        <div class="file-grid">
+          <article class="file-card">
+            <span class="file-type">CSV</span>
+            <h3>Country performance</h3>
+            <p>
+              Raw country-level sales, margin, marketing, returns, logistics, and stockout data.
+            </p>
+            <a href="./demo-files/chillnest_country_performance.csv" download>Download CSV</a>
+          </article>
+          <article class="file-card">
+            <span class="file-type">MD</span>
+            <h3>Operating notes</h3>
+            <p>
+              Short internal notes from Finance, Marketing, Supply Chain, and Customer Support.
+            </p>
+            <a href="./demo-files/chillnest_operating_notes.md" download>Download notes</a>
+          </article>
+          <article class="file-card created-live">
+            <span class="file-type">LIVE</span>
+            <h3>Forecast model</h3>
+            <p>
+              Created in Workflow 2 with ChatGPT for Sheets from the raw performance data.
+            </p>
+            <span class="muted-link">Created during demo</span>
+          </article>
+          <article class="file-card created-live">
+            <span class="file-type">LIVE</span>
+            <h3>Leadership dashboard</h3>
+            <p>
+              Created in Workflow 4 after the assumptions are validated and refreshed.
+            </p>
+            <span class="muted-link">Created during demo</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="band" id="prompts">
+        <div class="section-heading">
+          <p class="eyebrow">Prompt library</p>
+          <h2>Copy-ready prompts</h2>
+          <p>
+            These are designed to be pasted live. Each prompt names the expected workflow and
+            includes review boundaries.
+          </p>
+        </div>
+
+        <div class="prompt-stack">
+          <article class="prompt-block">
+            <div class="prompt-header">
+              <div>
+                <span class="step-chip">Workflow 1</span>
+                <h3>Raw Data Story</h3>
+              </div>
+              <button class="copy-button" data-copy-target="prompt-1">Copy</button>
+            </div>
+            <pre id="prompt-1"><code>Act as a finance analyst preparing a hands-on enablement example for a Finance department.
+
+Use the uploaded ChillNest country performance data and operating notes.
+
+Tell me the story behind the raw data. Do not just summarize rows.
+
+Separate:
+- revenue growth
+- profitable growth
+- operational risk
+- country-level drivers
+- items that require human verification before leadership sees the analysis
+
+End with 5 finance questions this analysis should answer in the model.</code></pre>
+          </article>
+
+          <article class="prompt-block">
+            <div class="prompt-header">
+              <div>
+                <span class="step-chip">Workflow 2</span>
+                <h3>Create The Model</h3>
+              </div>
+              <button class="copy-button" data-copy-target="prompt-2">Copy</button>
+            </div>
+            <pre id="prompt-2"><code>Create a country-level forecast model in this workbook using the ChillNest country performance data.
+
+Workflow: Forecast Model Creation.
+
+Build the model from scratch. Include:
+- base, upside, and downside revenue forecast
+- forecast units
+- contribution profit forecast
+- marketing efficiency impact
+- return-rate impact
+- logistics cost impact
+- stockout risk adjustment
+- investment priority by country: Invest, Test, Hold, or Pause
+
+Create editable assumption inputs for each country:
+- weather_demand_lift
+- marketing_efficiency_adjustment
+- return_rate_adjustment
+- logistics_cost_adjustment
+- FX_margin_adjustment
+- inflation_or_interest_rate_cost_adjustment
+
+Use formulas for calculated outputs. Make the model easy for Finance to audit.</code></pre>
+          </article>
+
+          <article class="prompt-block featured-prompt">
+            <div class="prompt-header">
+              <div>
+                <span class="step-chip">Workflow 3</span>
+                <h3>Assumption Validation + Model Refresh</h3>
+              </div>
+              <button class="copy-button" data-copy-target="prompt-3">Copy</button>
+            </div>
+            <pre id="prompt-3"><code>Run an Assumption Validation + Model Refresh workflow on this workbook.
+
+Use the forecast model you just created. Do not create a new file.
+
+Use the Research/Search connector or any approved finance-data connector available in this environment.
+
+Step 1: Identify the key assumption inputs by country:
+- weather_demand_lift
+- FX_margin_adjustment
+- inflation_or_interest_rate_cost_adjustment
+- return_rate_adjustment
+- logistics_cost_adjustment
+- demand_confidence
+
+Step 2: Validate those assumptions with trusted external sources:
+- weather or heatwave signal: NASA POWER, Open-Meteo, NOAA, or another weather source
+- FX or currency movement: FRED, ECB, a central bank, or reliable market-data source
+- inflation or interest-rate pressure: World Bank, OECD, FRED, or country central banks
+- ecommerce demand signal: Google Trends or another available demand signal
+
+Step 3: Update only assumption input cells and validation fields.
+Do not overwrite formulas, calculated outputs, or formatting unless needed.
+
+Step 4: For every updated assumption, add:
+- source name
+- source link
+- as-of date
+- confidence level: High, Medium, or Low
+- human review status: Approved, Needs Review, or Do Not Use
+- short rationale
+
+Step 5: Recalculate the forecast outputs and explain what changed:
+- which countries moved up or down in investment priority
+- which assumptions had the largest impact
+- which assumptions still require Finance review before the dashboard is shared
+
+Do not present externally sourced assumptions as final unless the human review status is Approved.</code></pre>
+          </article>
+
+          <article class="prompt-block">
+            <div class="prompt-header">
+              <div>
+                <span class="step-chip">Workflow 3B</span>
+                <h3>Finance House Style Refinement</h3>
+              </div>
+              <button class="copy-button" data-copy-target="prompt-3b">Copy</button>
+            </div>
+            <pre id="prompt-3b"><code>Refine the refreshed forecast model using Finance house style and review rules.
+
+Workflow: Finance House Style Refinement.
+
+Use the model and assumptions already in this workbook. Do not create a new file.
+
+Apply these Finance interpretation rules:
+- Show country-level revenue, marketing spend, and contribution profit in $K, rounded to the nearest $1K.
+- Show portfolio totals in $M, rounded to one decimal place.
+- Show margin, return rate, conversion rate, and ROAS changes clearly. Use percentage points for rate changes when comparing to plan or prior month.
+- Use favorable / unfavorable language instead of positive / negative.
+- Separate timing issues from recurring performance issues.
+- Distinguish revenue growth from profitable growth.
+- Treat recurring return-rate issues, logistics-cost pressure, weak ROAS, FX margin pressure, and stockouts as higher-priority risks than one-time demand spikes.
+- Classify each country's variance driver as demand, execution, timing, mix, pricing, returns, logistics, FX, or inventory availability.
+- Distinguish "what happened" from "what leadership needs to decide."
+- Keep commentary direct, concise, and leadership-ready.
+- Use source citations for every material number, claim, or externally validated assumption.
+
+Add or update these fields in the model:
+- finance_driver_classification
+- timing_or_recurring
+- favorable_or_unfavorable
+- leadership_decision_needed
+- human_review_required
+- finance_commentary
+
+Use this materiality threshold:
+- Call out revenue variances greater than $25K or 5%.
+- Call out contribution profit variances greater than $10K or 5%.
+- Call out any assumption marked Needs Review or Do Not Use, even if the dollar impact is small.
+
+Then summarize the refinements:
+- top 3 favorable drivers
+- top 3 unfavorable drivers
+- countries that should be invested in, tested, held, or paused
+- items Finance must review before the dashboard is shared</code></pre>
+          </article>
+
+          <article class="prompt-block" id="dashboard">
+            <div class="prompt-header">
+              <div>
+                <span class="step-chip">Workflow 4</span>
+                <h3>Leadership Dashboard</h3>
+              </div>
+              <button class="copy-button" data-copy-target="prompt-4">Copy</button>
+            </div>
+            <pre id="prompt-4"><code>Create a leadership-ready dashboard from the refreshed ChillNest forecast model.
+
+Workflow: Leadership Dashboard Creation.
+
+Build a new dashboard view in this workbook with:
+- KPI cards for revenue, contribution profit, margin, and forecast risk
+- country ranking by investment priority
+- base, upside, and downside forecast view
+- contribution profit by country
+- assumptions requiring human review
+- top 5 takeaways
+- recommended next actions for Finance, Marketing, and Supply Chain
+
+Make it scannable for a Finance leadership meeting.
+
+After creating the dashboard, write a concise leadership brief:
+- headline
+- recommendation
+- what changed after assumption validation
+- risks and open questions
+- decisions needed from leadership</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="band facilitator">
+        <div class="section-heading">
+          <p class="eyebrow">Presenter notes</p>
+          <h2>What to emphasize live</h2>
+        </div>
+        <div class="note-grid">
+          <article>
+            <h3>Accuracy</h3>
+            <p>
+              Show source links, as-of dates, confidence, and human review status before the
+              dashboard is shared.
+            </p>
+          </article>
+          <article>
+            <h3>Judgment</h3>
+            <p>
+              Make it explicit that Finance owns final assumptions. ChatGPT helps organize,
+              research, and calculate.
+            </p>
+          </article>
+          <article>
+            <h3>Workflow</h3>
+            <p>
+              The same pattern applies across Finance: close analysis, forecast updates, variance
+              commentary, board packs, and operating reviews.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built for a ChatGPT for Finance enablement demo.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

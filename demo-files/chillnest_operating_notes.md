@@ -1,0 +1,49 @@
+# ChillNest Operating Notes
+
+These notes are synthetic and designed for a ChatGPT for Finance enablement demo.
+
+## Month-End Context
+
+ChillNest sells cooling blankets online across North America, Latin America, Europe, and Asia Pacific. June demand rose after a late-month heat wave in several markets. Finance is preparing a global performance readout and needs to separate headline growth from profitable growth.
+
+## Regional Notes
+
+### United States
+
+Paid search and marketplace traffic were strong throughout June. The team lost some upside because the queen-size cooling blanket was out of stock for three days. Marketing believes demand would have supported additional inventory.
+
+### Canada
+
+Canada delivered the cleanest month: strong ROAS, low return rate, and limited logistics friction. Finance views Canada as a useful benchmark for profitable growth.
+
+### Mexico
+
+Mexico grew above plan, but Finance flagged customs timing and payment processing fees as possible margin risks. The country looks promising, but the margin assumptions need review before leadership approves a larger media budget.
+
+### Brazil
+
+Brazil demand accelerated after a local influencer campaign and unusually hot weather. Logistics costs, FX movement, and returns are pressuring contribution profit. Finance should validate whether the sales lift is repeatable before funding a large inventory buy.
+
+### United Kingdom
+
+The UK underperformed plan. Return rates increased after customer feedback about fabric weight and sizing. Marketing spend was not efficient enough to offset softer conversion.
+
+### Germany
+
+Germany was the weakest country in the June readout. Demand was below plan, returns were elevated, and ROAS declined. Finance should avoid treating Germany as a summer growth market until weather and returns improve.
+
+### Japan
+
+Japan performed slightly above plan with healthy contribution profit. The team sees a stable but not explosive growth opportunity. Local logistics costs remain manageable.
+
+### Australia
+
+Australia is off-season. Revenue and conversion were below plan, but this is not a strategic concern for the June readout. Finance should keep Australia out of the summer investment priority list and revisit it before the local warm season.
+
+## Finance Review Guidance
+
+- Do not recommend investment based on revenue growth alone.
+- Rank countries by contribution profit and forecast confidence.
+- Flag assumptions that depend on weather, FX, inflation, interest rates, or logistics costs.
+- Require human review before leadership sees any assumption sourced externally.
+- Make the final dashboard scannable for Finance leaders.
