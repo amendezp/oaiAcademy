@@ -382,25 +382,49 @@ Then summarize the refinements:
               </div>
               <button class="copy-button" data-copy-target="prompt-5">Copy</button>
             </div>
-            <pre id="prompt-5"><code>Create a leadership-ready dashboard from the refreshed ChillNest forecast model.
+            <pre id="prompt-5"><code>Create a leadership-ready finance dashboard from the refreshed ChillNest forecast model.
 
 Workflow: Leadership Dashboard Creation.
 
-Build a new dashboard view in this workbook with:
-- KPI cards for revenue, contribution profit, margin, and forecast risk
-- country ranking by investment priority
-- base, upside, and downside forecast view
-- contribution profit by country
-- assumptions requiring human review
-- top 5 takeaways
-- recommended next actions for Finance, Marketing, and Supply Chain
+Build a new dashboard view in this workbook using a clean executive layout with panels.
 
-Make it scannable for a Finance leadership meeting.
+Top row: create high-level KPI cards for:
+- Revenue
+- Gross Margin
+- Burn Rate
+- Runway
+- Budget vs. Actual
+
+Use actual workbook values where available.
+If Burn Rate, Runway, or any other KPI is not available in the source data, create a clearly labeled placeholder panel with a sample number and mark it "Placeholder - needs source data." Do not imply placeholder values are real.
+
+Dashboard sections:
+- KPI summary panel with current value, plan or target, variance, and favorable / unfavorable status
+- Country performance panel ranked by investment priority: Invest, Test, Hold, or Pause
+- Budget vs. Actual panel showing revenue and contribution profit variance
+- Scenario panel showing base, upside, and downside forecast
+- Assumption review panel showing items marked Needs Review or Do Not Use
+- Key takeaways panel with the top 5 leadership insights
+- Action panel with recommended next steps for Finance, Marketing, and Supply Chain
+
+Design requirements:
+- Use a clean layout with clear panels, readable labels, and consistent formatting
+- Use $K for country-level values and $M for portfolio totals
+- Use green only for favorable variance and red only for unfavorable variance
+- Keep text short enough for a Finance leader to scan in under 60 seconds
+- Make placeholder metrics visually distinct from source-backed metrics
+
+Accuracy requirements:
+- Add a small source / review note for each KPI panel
+- Show which metrics are source-backed, calculated, or placeholder
+- Do not hide assumptions that require human review
+- Do not overwrite the underlying model formulas
 
 After creating the dashboard, write a concise leadership brief:
 - headline
 - recommendation
 - what changed after assumption validation
+- which KPIs are source-backed vs. placeholders
 - risks and open questions
 - decisions needed from leadership</code></pre>
           </article>
