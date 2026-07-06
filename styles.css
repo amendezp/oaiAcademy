@@ -244,12 +244,18 @@ dd {
   font-weight: 650;
 }
 
-.intro-grid {
+.intro-grid,
+.learner-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
   background: var(--wash);
   border-bottom: 1px solid var(--soft-line);
+}
+
+.learner-grid {
+  background: transparent;
+  border-bottom: 0;
 }
 
 .principle,
@@ -293,6 +299,37 @@ dd {
 .file-card p,
 .note-grid p {
   color: var(--muted);
+}
+
+.download-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: center;
+  margin-top: 28px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: linear-gradient(120deg, #ffffff 0%, #f1fbfd 100%);
+  box-shadow: var(--shadow);
+}
+
+.download-panel h2 {
+  font-size: clamp(28px, 3vw, 42px);
+}
+
+.download-panel p {
+  max-width: 720px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
 }
 
 .section-heading {
@@ -472,11 +509,14 @@ code {
   box-shadow: var(--shadow);
 }
 
+.review-section,
 .facilitator {
   background: var(--ink);
   color: #ffffff;
 }
 
+.review-section .eyebrow,
+.review-section .section-heading p,
 .facilitator .eyebrow,
 .facilitator .section-heading p {
   color: #9de8f5;
@@ -530,8 +570,10 @@ code {
 
   .hero,
   .intro-grid,
+  .learner-grid,
   .file-grid,
-  .note-grid {
+  .note-grid,
+  .download-panel {
     grid-template-columns: 1fr;
   }
 
@@ -541,6 +583,10 @@ code {
 
   .workflow-body ul {
     grid-template-columns: 1fr;
+  }
+
+  .download-actions {
+    justify-content: flex-start;
   }
 }
 
