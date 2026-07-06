@@ -1,6 +1,6 @@
-# ChatGPT for Finance Lab
+# AI Enablement Journeys
 
-An audience-facing static lab site for Finance teams learning how to use ChatGPT and ChatGPT for Excel or Google Sheets.
+An audience-facing static lab site for teams learning through two paths: ChatGPT for Finance and Codex for Marketing.
 
 Learners move through a guided journey:
 
@@ -14,6 +14,7 @@ Learners move through a guided journey:
 ## Files
 
 - `index.html` - two-journey landing page
+- `finance.html` - ChatGPT for Finance workflow overview
 - `setup.html` - Finance requirements checklist
 - `story.html` - raw-data story workflow
 - `model.html` - model creation workflow
@@ -31,7 +32,7 @@ Learners move through a guided journey:
 - `demo-files/chillnest_historical_pl.csv` - historical P&L
 - `demo-files/chillnest_historical_balance_sheet.csv` - historical balance sheet
 - `demo-files/chillnest_historical_cash_flow.csv` - historical cash flow statement
-- `demo-files/chillnest_finance_source_pack.zip` - bundled Finance journey source files
+- `demo-files/chillnest_finance_source_pack.zip` - bundled ChatGPT for Finance source files
 
 ## Deploy To Vercel
 

@@ -144,7 +144,8 @@ p {
   overflow-x: visible;
 }
 
-.top-nav a {
+.top-nav a,
+.nav-group summary {
   display: inline-flex;
   align-items: center;
   min-height: 46px;
@@ -154,15 +155,58 @@ p {
   transition: background 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
-.top-nav a:hover {
+.top-nav a:hover,
+.nav-group summary:hover {
   background: #f8fafc;
   color: var(--ink);
   transform: translateX(2px);
 }
 
-.top-nav a.active {
+.top-nav a.active,
+.nav-group.active > summary {
   background: #ecfeff;
   color: var(--aqua-dark);
+}
+
+.nav-group {
+  display: grid;
+  gap: 6px;
+}
+
+.nav-group summary {
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+}
+
+.nav-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-group summary::after {
+  content: "v";
+  margin-left: 10px;
+  color: currentColor;
+  font-size: 12px;
+  transition: transform 180ms ease;
+}
+
+.nav-group[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.nav-submenu {
+  display: grid;
+  gap: 4px;
+  padding-left: 12px;
+}
+
+.nav-submenu a {
+  min-height: 38px;
+  padding: 7px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 750;
 }
 
 body > main,
@@ -398,6 +442,10 @@ body > footer {
   gap: 16px;
 }
 
+.workflow-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .choice-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -435,6 +483,10 @@ body > footer {
 .journey-card p {
   margin-top: 10px;
   padding: 0 10px 10px;
+}
+
+.workflow-card {
+  min-height: 270px;
 }
 
 .journey-choice {
@@ -979,14 +1031,30 @@ code {
     overflow-x: auto;
   }
 
-  .top-nav a {
+  .top-nav a,
+  .nav-group summary {
     min-height: 36px;
     padding: 6px 12px;
     border-radius: 999px;
   }
 
-  .top-nav a:hover {
+  .top-nav a:hover,
+  .nav-group summary:hover {
     transform: none;
+  }
+
+  .nav-group {
+    min-width: 220px;
+  }
+
+  .nav-submenu {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-left: 0;
+  }
+
+  .nav-submenu a {
+    border-radius: 12px;
+    white-space: normal;
   }
 
   .journey-hero,
@@ -1047,6 +1115,7 @@ code {
   }
 
   .journey-grid,
+  .workflow-grid,
   .download-list,
   .resource-row,
   .learning-panel,
