@@ -63,8 +63,8 @@
           <div class="lesson-kicker">Workflow 1 of 5</div>
           <h1>Find the finance story in the raw data</h1>
           <p class="lesson-lead">
-            Use the country performance file for the numbers and the operating notes for context.
-            Turn both into a clear story of what changed, why it changed, and what needs review.
+            Use the company profile for business context, the country performance file for the
+            numbers, and the operating notes for what likely explains the movement.
           </p>
         </div>
 
@@ -72,9 +72,10 @@
           <article class="io-card">
             <span>Inputs</span>
             <ul>
+              <li>Company profile PDF or TXT</li>
               <li>Country performance CSV</li>
               <li>Operating notes from Finance, Marketing, Supply Chain, and Support</li>
-              <li>Company profile, regional data, and historical statements saved for Workflow 2</li>
+              <li>Regional data and historical statements saved for Workflow 2</li>
             </ul>
           </article>
           <article class="io-card">
@@ -103,8 +104,8 @@
               </label>
               <span>Step 1</span>
               <div>
-                <h3>Upload two files</h3>
-                <p>Start with the country performance CSV and the operating notes. Keep the other files for the next workflow.</p>
+                <h3>Upload three files</h3>
+                <p>Start with the company profile, country performance CSV, and operating notes. Keep the regional and historical files for the next workflow.</p>
               </div>
             </li>
             <li>
@@ -123,7 +124,7 @@
                     </div>
                     <button class="copy-button" data-copy-target="prompt-story">Copy</button>
                   </div>
-                  <pre id="prompt-story"><code>Use the uploaded ChillNest country performance file and operating notes to tell me the story behind performance data.
+                  <pre id="prompt-story"><code>Use the uploaded ChillNest company profile, country performance file, and operating notes to tell me the story behind performance data.
 
 Create a finance-ready readout with:
 - what changed and why
@@ -131,7 +132,7 @@ Create a finance-ready readout with:
 - quality of growth: revenue, margin, contribution profit, returns, ROAS, logistics, and stockouts
 - items that need human verification
 
-Use the country performance file for the numbers. Use the operating notes to explain likely drivers, risks, and business context.
+Use the company profile for what the business does and how it makes money. Use the country performance file for the numbers. Use the operating notes to explain likely drivers, risks, and business context.
 
 The audience is a finance organization and decision makers across multiple finance roles and levels of seniority.
 
@@ -146,7 +147,7 @@ Cite the source file or field for every material claim.</code></pre>
               <span>Step 3</span>
               <div>
                 <h3>Check the evidence</h3>
-                <p>Look for field references next to numeric claims and note references next to explanations. Ask for citations if they are missing.</p>
+                <p>Look for field references next to numeric claims, profile references next to business context, and note references next to explanations.</p>
               </div>
             </li>
             <li>
