@@ -70,60 +70,26 @@
           <div class="prompt-header">
             <div>
               <span class="step-chip">Copy prompt</span>
-              <h3>Leadership Dashboard Creation</h3>
+              <h3>Create the Dashboard</h3>
             </div>
             <button class="copy-button" data-copy-target="prompt-dashboard">Copy</button>
           </div>
-          <pre id="prompt-dashboard"><code>Create a leadership-ready finance dashboard from the refreshed ChillNest DCF model.
+          <pre id="prompt-dashboard"><code>Create a leadership-ready dashboard from the refreshed ChillNest DCF.
 
-Workflow: ChatGPT for Sheets Leadership Dashboard Creation.
-
-Build a new dashboard view in this workbook using a clean executive layout with panels. Do not overwrite the underlying model formulas.
-
-Top row: create high-level KPI cards for:
+Use clean panels for:
 - Revenue
 - Gross Margin
 - Burn Rate
 - Runway
 - Budget vs. Actual
 
-Use actual workbook values where available. Use the historical statements for free cash flow, cash, debt, capex, and DCF outputs. Use the monthly regional performance file for regional trend, budget vs. actual, free cash flow, and DCF-ready context.
+Add views for regional trends, country priorities, DCF valuation, scenarios, assumption review, and top takeaways.
 
-If Burn Rate, Runway, or another KPI is not meaningful because ChillNest is cash-flow positive, label it "Not applicable - positive FCF." If a KPI is not available in the source data, create a clearly labeled placeholder panel with a sample number and mark it "Placeholder - needs source data." Do not imply placeholder values are real.
+Include at least 3 visuals. Label each metric as source-backed, calculated, externally validated, or placeholder.
 
-Create these dashboard sections:
-1. KPI summary: current value, plan or target, variance, and favorable / unfavorable status.
-2. Regional trend: monthly revenue, gross margin, and free cash flow by region.
-3. Country priorities: Invest, Test, Hold, or Pause, with the driver behind the classification.
-4. DCF valuation: enterprise value, net debt, implied equity value, discount rate, and terminal growth.
-5. Scenario view: base, upside, and downside forecast.
-6. Assumption review: items marked Needs Review or Do Not Use.
-7. Leadership takeaways: top 5 insights and recommended decisions for Finance, Marketing, and Supply Chain.
+If a KPI is not meaningful, mark it "Not applicable." If data is missing, mark it "Placeholder - needs source data."
 
-Add at least three visuals:
-- regional revenue and free cash flow trend
-- country investment priority or contribution profit ranking
-- DCF sensitivity or scenario comparison
-
-Design requirements:
-- Use a clean layout with clear panels, readable labels, and consistent formatting.
-- Use $K for country-level values and $M for portfolio totals.
-- Use green only for favorable variance and red only for unfavorable variance.
-- Keep text short enough for a Finance leader to scan in under 60 seconds.
-- Make placeholder metrics visually distinct from source-backed metrics.
-
-Accuracy requirements:
-- Add a small source / review note for each KPI panel.
-- Show whether each metric is source-backed, calculated, externally validated, or placeholder.
-- Do not hide assumptions that require human review.
-
-After creating the dashboard, write a concise leadership brief:
-- headline
-- recommendation
-- what changed after assumption validation
-- which KPIs are source-backed vs. placeholders
-- risks and open questions
-- decisions needed from leadership</code></pre>
+Finish with a concise leadership brief: recommendation, risks, open questions, and decisions needed.</code></pre>
         </article>
 
         <div class="callout">

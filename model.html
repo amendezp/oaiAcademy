@@ -70,51 +70,23 @@
           <div class="prompt-header">
             <div>
               <span class="step-chip">Copy prompt</span>
-              <h3>DCF Model Creation</h3>
+              <h3>Create the DCF Model</h3>
             </div>
             <button class="copy-button" data-copy-target="prompt-model">Copy</button>
           </div>
-          <pre id="prompt-model"><code>Create a DCF model in this workbook using the ChillNest company profile, historical P&amp;L, balance sheet, cash flow statement, country performance data, and monthly regional performance data.
+          <pre id="prompt-model"><code>Create a simple 5-year DCF model in this workbook using the ChillNest files.
 
-Workflow: DCF Model Creation in ChatGPT for Sheets or Excel.
+Include:
+- historical summary from the P&amp;L, balance sheet, and cash flow statement
+- editable assumptions for growth, margin, opex, working capital, capex, tax, discount rate, and terminal growth
+- base, upside, and downside forecast
+- free cash flow, terminal value, enterprise value, net debt, and implied equity value
+- sensitivity table for discount rate and terminal growth
+- country priority: Invest, Test, Hold, or Pause
 
-Use the current workbook/files. If needed, create a new model view inside this workbook, but do not create a separate file.
+Use formulas for outputs. Do not hardcode forecast or valuation results.
 
-Before building the model:
-- map each source file to its role in the model
-- identify the starting historical period
-- list any missing fields or simplifications
-
-Build a simple, auditable 5-year DCF with five sections:
-1. Historical summary: revenue, gross margin, EBITDA, EBIT, tax, net income, working capital, capex, operating cash flow, and free cash flow.
-2. Assumption inputs: revenue growth, gross margin, operating expense as % of revenue, tax rate, D&amp;A, working capital, capex, discount rate, and terminal growth.
-3. Operating forecast: base, upside, and downside cases for revenue, EBIT, NOPAT, free cash flow, and free cash flow margin.
-4. Valuation: terminal value, enterprise value, net debt adjustment using cash and debt, implied equity value, and sensitivity table for discount rate and terminal growth.
-5. Decision outputs: country investment priority of Invest, Test, Hold, or Pause, tied to contribution profit, ROAS, returns, logistics cost, stockouts, and regional trend.
-
-Create editable assumption inputs for:
-- weather_demand_lift
-- marketing_efficiency_adjustment
-- return_rate_adjustment
-- logistics_cost_adjustment
-- FX_margin_adjustment
-- inflation_or_interest_rate_cost_adjustment
-- regional_trend_adjustment
-- free_cash_flow_conversion_adjustment
-- revenue_growth_by_year
-- gross_margin_by_year
-- opex_as_pct_of_revenue
-- working_capital_as_pct_of_revenue
-- capex_as_pct_of_revenue
-- tax_rate
-- discount_rate
-- terminal_growth_rate
-
-Use formulas for calculated outputs. Do not hardcode forecast or valuation outputs.
-
-Add model documentation that explains each formula in plain English and labels every output as historical, forecast, valuation, country-level, regional, or total company.
-
-Add a review column for each major assumption with: source, rationale, confidence level, and human review status.</code></pre>
+Add source, rationale, confidence, and human review status for key assumptions.</code></pre>
         </article>
 
         <div class="checklist-card compact">
