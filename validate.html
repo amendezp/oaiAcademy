@@ -48,21 +48,73 @@
           update the review fields, and keep human approval visible.
         </p>
 
-        <div class="learning-panel">
-          <article>
-            <h2>Use connectors carefully</h2>
-            <p>
-              Research can help validate weather, FX, inflation, or interest-rate assumptions,
-              but externally sourced values still need human review.
-            </p>
+        <div class="workflow-summary">
+          <p class="eyebrow">Workflow</p>
+          <h2>Refresh assumptions with sourced research and visible judgment.</h2>
+          <p>
+            The point is not to let research autopilot the model. The point is to make assumptions,
+            source links, confidence, and human review status visible in the workbook.
+          </p>
+        </div>
+
+        <div class="io-grid" aria-label="Workflow inputs and outputs">
+          <article class="io-card">
+            <span>Inputs</span>
+            <h2>What to use</h2>
+            <ul>
+              <li>The DCF workbook created in Workflow 2</li>
+              <li>Editable assumption and review fields</li>
+              <li>ChatGPT for Sheets or Excel with Research/Search</li>
+              <li>Internal country, regional, and cash flow context</li>
+            </ul>
           </article>
-          <article>
-            <h2>Keep judgment visible</h2>
-            <p>
-              A source link is not the same as approval. Keep confidence, rationale, and review
-              status visible before anything reaches leadership.
-            </p>
+          <article class="io-card">
+            <span>Outputs</span>
+            <h2>What changes</h2>
+            <ul>
+              <li>Updated assumption values with old value, new value, and as-of date</li>
+              <li>Source links and rationale for material updates</li>
+              <li>Confidence and human review status for each key assumption</li>
+              <li>A favorable / unfavorable summary of model impact</li>
+            </ul>
           </article>
+        </div>
+
+        <div class="step-section">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">Step by step</p>
+            <h2>Validate the assumptions</h2>
+          </div>
+          <ol class="workflow-steps">
+            <li>
+              <span>Step 1</span>
+              <div>
+                <h3>Stay in the same workbook</h3>
+                <p>Use the model you just created. This shows how Finance can refine the current file instead of starting over.</p>
+              </div>
+            </li>
+            <li>
+              <span>Step 2</span>
+              <div>
+                <h3>Use Research/Search or an approved finance connector</h3>
+                <p>Validate external inputs like weather demand, FX, inflation, interest rates, and discount-rate context.</p>
+              </div>
+            </li>
+            <li>
+              <span>Step 3</span>
+              <div>
+                <h3>Paste the prompt below</h3>
+                <p>Ask ChatGPT to update only assumptions and review fields, while preserving model formulas.</p>
+              </div>
+            </li>
+            <li>
+              <span>Step 4</span>
+              <div>
+                <h3>Approve the judgment calls</h3>
+                <p>Check the source, confidence, and review status before treating any refreshed assumption as final.</p>
+              </div>
+            </li>
+          </ol>
         </div>
 
         <article class="prompt-block featured-prompt">

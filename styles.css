@@ -241,6 +241,9 @@ body > footer {
 .download-card small,
 .journey-card p,
 .learning-panel p,
+.workflow-summary p,
+.io-card li,
+.workflow-steps p,
 .callout,
 .adapt-card p {
   color: var(--muted);
@@ -294,6 +297,9 @@ body > footer {
 .download-card,
 .checklist-card,
 .learning-panel article,
+.workflow-summary,
+.io-card,
+.workflow-steps li,
 .prompt-block,
 .review-card,
 .adapt-card,
@@ -560,6 +566,7 @@ body > footer {
 }
 
 .learning-panel,
+.io-grid,
 .review-grid,
 .kpi-preview {
   display: grid;
@@ -569,6 +576,9 @@ body > footer {
 }
 
 .learning-panel article,
+.workflow-summary,
+.io-card,
+.workflow-steps li,
 .review-card,
 .adapt-card {
   padding: 24px;
@@ -593,6 +603,83 @@ body > footer {
 
 .requirements-card {
   max-width: 940px;
+}
+
+.workflow-summary {
+  max-width: 920px;
+  margin-top: 34px;
+  background: linear-gradient(120deg, #ffffff 0%, #effbfc 100%);
+}
+
+.workflow-summary h2 {
+  font-size: clamp(26px, 3.2vw, 42px);
+}
+
+.workflow-summary p {
+  margin-top: 14px;
+  font-size: 18px;
+}
+
+.io-card {
+  min-height: 220px;
+}
+
+.io-card span,
+.workflow-steps li > span {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 28px;
+  align-items: center;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: var(--mint);
+  color: var(--aqua-dark);
+  font-size: 12px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.io-card h2 {
+  margin-top: 12px;
+  font-size: 28px;
+}
+
+.io-card ul {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding-left: 20px;
+}
+
+.step-section {
+  margin-top: 38px;
+}
+
+.compact-heading {
+  margin-bottom: 18px;
+}
+
+.workflow-steps {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.workflow-steps li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.workflow-steps h3 {
+  font-size: 20px;
+}
+
+.workflow-steps p {
+  margin-top: 6px;
 }
 
 .checklist-header {
@@ -921,6 +1008,7 @@ code {
 
   .journey-grid,
   .review-grid,
+  .io-grid,
   .kpi-preview {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -962,6 +1050,8 @@ code {
   .download-list,
   .resource-row,
   .learning-panel,
+  .io-grid,
+  .workflow-steps li,
   .review-grid,
   .kpi-preview,
   .side-steps {

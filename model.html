@@ -49,21 +49,73 @@
           prebuilt template.
         </p>
 
-        <div class="learning-panel">
-          <article>
-            <h2>Use the spreadsheet here</h2>
-            <p>
-              This is where ChatGPT for Sheets is most useful: formulas, model structure,
-              scenarios, DCF assumptions, valuation outputs, and documentation.
-            </p>
+        <div class="workflow-summary">
+          <p class="eyebrow">Workflow</p>
+          <h2>Turn the finance story into an auditable DCF model.</h2>
+          <p>
+            This is where ChatGPT for Sheets or Excel shines: workbook structure, formulas,
+            editable assumptions, scenarios, valuation outputs, and documentation.
+          </p>
+        </div>
+
+        <div class="io-grid" aria-label="Workflow inputs and outputs">
+          <article class="io-card">
+            <span>Inputs</span>
+            <h2>What to use</h2>
+            <ul>
+              <li>The story readout and DCF questions from Workflow 1</li>
+              <li>Historical P&amp;L, balance sheet, and cash flow files</li>
+              <li>Country and regional performance data for growth and margin context</li>
+              <li>An open workbook in Google Sheets or Excel</li>
+            </ul>
           </article>
-          <article>
-            <h2>Model the economics</h2>
-            <p>
-              Do not stop at revenue. Build from historical financial statements into a free cash
-              flow forecast, terminal value, enterprise value, and sensitivity table.
-            </p>
+          <article class="io-card">
+            <span>Outputs</span>
+            <h2>What the model should create</h2>
+            <ul>
+              <li>Five-year free cash flow forecast with editable assumptions</li>
+              <li>Base, upside, and downside scenarios</li>
+              <li>DCF valuation, net debt bridge, and sensitivity table</li>
+              <li>Source, rationale, confidence, and human review fields</li>
+            </ul>
           </article>
+        </div>
+
+        <div class="step-section">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">Step by step</p>
+            <h2>Build the model live</h2>
+          </div>
+          <ol class="workflow-steps">
+            <li>
+              <span>Step 1</span>
+              <div>
+                <h3>Open a blank workbook</h3>
+                <p>Use Google Sheets or Excel with ChatGPT enabled so the model can be created in the working file.</p>
+              </div>
+            </li>
+            <li>
+              <span>Step 2</span>
+              <div>
+                <h3>Import the ChillNest files</h3>
+                <p>Bring in the historical statements, country data, and monthly regional data. Keep each source easy to inspect.</p>
+              </div>
+            </li>
+            <li>
+              <span>Step 3</span>
+              <div>
+                <h3>Paste the prompt below</h3>
+                <p>Ask ChatGPT to create the model, not just explain how to build one.</p>
+              </div>
+            </li>
+            <li>
+              <span>Step 4</span>
+              <div>
+                <h3>Review the workbook</h3>
+                <p>Confirm outputs use formulas, assumptions are editable, and review fields are visible before moving on.</p>
+              </div>
+            </li>
+          </ol>
         </div>
 
         <article class="prompt-block">
