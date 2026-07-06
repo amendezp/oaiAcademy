@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Create the Model | ChatGPT for Finance</title>
-    <meta name="description" content="Use ChatGPT for Sheets to create a finance DCF model.">
+    <meta name="description" content="Use ChatGPT to create a lightweight finance DCF workbook.">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
@@ -22,19 +22,16 @@
           <summary>ChatGPT for Finance</summary>
           <div class="nav-submenu">
             <a href="./finance.html">Overview</a>
-            <a href="./setup.html">Requirements</a>
             <a href="./story.html">1. Story</a>
             <a class="active" href="./model.html">2. Model</a>
             <a href="./validate.html">3. Validate</a>
             <a href="./dashboard.html">4. Dashboard</a>
-            <a href="./review.html">Review</a>
           </div>
         </details>
         <details class="nav-group">
           <summary>Codex for Marketing</summary>
           <div class="nav-submenu">
             <a href="./marketing.html">Overview</a>
-            <a href="./marketing-setup.html">Requirements</a>
             <a href="./marketing-brief.html">1. Brief</a>
             <a href="./marketing-creative.html">2. Creative</a>
             <a href="./marketing-handoff.html">3. Handoff</a>
@@ -49,22 +46,20 @@
       <aside class="lesson-sidebar">
         <p class="eyebrow">ChatGPT for Finance</p>
         <ol class="side-steps">
-          <li>Requirements</li>
           <li>1. Find the story</li>
           <li class="current">2. Create the model</li>
           <li>3. Validate assumptions</li>
           <li>4. Create dashboard</li>
-          <li>Review</li>
         </ol>
       </aside>
 
       <section class="lesson-main">
         <div class="lesson-hero">
-          <div class="lesson-kicker">Workflow 2 of 5</div>
+          <div class="lesson-kicker">Workflow 2 of 4</div>
           <h1>Create a DCF model</h1>
           <p class="lesson-lead">
-            Move into ChatGPT for Sheets or Excel. Use the remaining modeling files to create a
-            lightweight DCF workbook with a short assumptions tab for the next workflow.
+            Stay in ChatGPT. Upload the remaining historical files, then create a lightweight DCF
+            workbook with a short assumptions tab for the next workflow.
           </p>
         </div>
 
@@ -74,14 +69,15 @@
             <ul>
               <li>The finance story, short brief, and open questions from Workflow 1</li>
               <li>Monthly regional performance data for trends and working capital context</li>
-              <li>Historical P&amp;L, balance sheet, and cash flow files</li>
-              <li>An open workbook in Google Sheets or Excel</li>
+              <li>Historical profit and loss CSV</li>
+              <li>Historical balance sheet CSV</li>
+              <li>Historical cash flow CSV</li>
             </ul>
           </article>
           <article class="io-card">
             <span>Outputs</span>
             <ul>
-              <li>Source Summary, Assumptions To Review, Simple Forecast, and DCF Output tabs</li>
+              <li>A downloadable workbook with Source Summary, Assumptions To Review, Simple Forecast, and DCF Output tabs</li>
               <li>A five-year free cash flow forecast with formulas</li>
               <li>A short list of 6-8 assumptions to validate later</li>
               <li>Source, rationale, confidence, and review-status fields</li>
@@ -95,7 +91,7 @@
               <p class="eyebrow">Step by step</p>
               <h2>Build the model live</h2>
             </div>
-            <span data-progress-count>0 of 4 completed</span>
+            <span data-progress-count>0 of 3 completed</span>
           </div>
           <ol class="workflow-steps">
             <li>
@@ -104,8 +100,8 @@
               </label>
               <span>Step 1</span>
               <div>
-                <h3>Open a blank workbook</h3>
-                <p>Use Google Sheets or Excel with ChatGPT enabled so the model can be created in the working file.</p>
+                <h3>Upload the historical files</h3>
+                <p>Continue in ChatGPT and upload the remaining files: monthly regional performance, historical profit and loss, historical balance sheet, and historical cash flow.</p>
               </div>
             </li>
             <li>
@@ -114,18 +110,8 @@
               </label>
               <span>Step 2</span>
               <div>
-                <h3>Import the modeling files</h3>
-                <p>Bring in the monthly regional performance and historical statements. Paste the Workflow 1 brief and open questions into a notes tab.</p>
-              </div>
-            </li>
-            <li>
-              <label class="workflow-step-check">
-                <input type="checkbox" data-progress-item="model-step-3" aria-label="Mark step 3 complete">
-              </label>
-              <span>Step 3</span>
-              <div>
                 <h3>Paste the prompt below</h3>
-                <p>Ask ChatGPT to create the model, not just explain how to build one.</p>
+                <p>Ask ChatGPT to create the workbook directly, not just explain how to build one.</p>
                 <article class="prompt-block">
                   <div class="prompt-header">
                     <div>
@@ -134,7 +120,13 @@
                     </div>
                     <button class="copy-button" data-copy-target="prompt-model">Copy</button>
                   </div>
-                  <pre id="prompt-model"><code>Create a lightweight 5-year DCF workbook for ChillNest using the monthly regional performance file, historical statements, and the Workflow 1 finance story.
+                  <pre id="prompt-model"><code>Using the uploaded Workflow 1 finance brief and historical files, create a downloadable lightweight 5-year DCF workbook for ChillNest.
+
+Use:
+- monthly regional performance CSV for trends, seasonality, working capital, and free cash flow context
+- historical profit and loss CSV
+- historical balance sheet CSV
+- historical cash flow CSV
 
 Keep it simple and demo-ready. Create only these tabs:
 - Source Summary: short summary of the files and key historical numbers
@@ -150,12 +142,12 @@ Make the Assumptions To Review tab easy to inspect because we will validate it i
             </li>
             <li>
               <label class="workflow-step-check">
-                <input type="checkbox" data-progress-item="model-step-4" aria-label="Mark step 4 complete">
+                <input type="checkbox" data-progress-item="model-step-3" aria-label="Mark step 3 complete">
               </label>
-              <span>Step 4</span>
+              <span>Step 3</span>
               <div>
                 <h3>Review the workbook</h3>
-                <p>Confirm outputs use formulas, assumptions are editable, and review fields are visible before moving on.</p>
+                <p>Download or open the workbook. Confirm outputs use formulas, assumptions are editable, and review fields are visible before moving on.</p>
               </div>
             </li>
           </ol>
@@ -165,8 +157,8 @@ Make the Assumptions To Review tab easy to inspect because we will validate it i
           <p class="eyebrow">Workflow</p>
           <h2>Turn the finance story into an auditable DCF model.</h2>
           <p>
-            Use ChatGPT for Sheets or Excel to create a simple workbook structure, formulas,
-            editable assumptions, valuation outputs, and a clear review path.
+            Use ChatGPT to create a simple workbook structure, formulas, editable assumptions,
+            valuation outputs, and a clear review path before moving into spreadsheet validation.
           </p>
         </div>
 

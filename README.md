@@ -8,10 +8,9 @@ The ChatGPT for Finance journey follows an analysis and modeling arc:
 
 1. Requirements: download files and prepare tools.
 2. Story: explain raw country and regional performance data in ChatGPT.
-3. Model: create a DCF model live in ChatGPT for Excel or Google Sheets.
+3. Model: create a DCF model live in ChatGPT using the remaining historical files.
 4. Validate: refresh assumptions with research or approved connectors.
-5. Dashboard: create a dashboard and briefing for review.
-6. Review: check accuracy, assumptions, and human judgment before sharing.
+5. Dashboard: create a dashboard and close with ownership, accountability, and iteration reminders.
 
 The Codex for Marketing journey follows a campaign-production arc:
 
@@ -31,7 +30,6 @@ The Codex for Marketing journey follows a campaign-production arc:
 - `model.html` - model creation workflow
 - `validate.html` - assumption validation workflow
 - `dashboard.html` - dashboard creation workflow
-- `review.html` - final review checklist
 - `marketing.html` - Codex for Marketing workflow overview
 - `marketing-setup.html` - Marketing requirements checklist and campaign source-file download
 - `marketing-brief.html` - marketing brief workflow

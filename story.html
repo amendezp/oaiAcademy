@@ -22,19 +22,16 @@
           <summary>ChatGPT for Finance</summary>
           <div class="nav-submenu">
             <a href="./finance.html">Overview</a>
-            <a href="./setup.html">Requirements</a>
             <a class="active" href="./story.html">1. Story</a>
             <a href="./model.html">2. Model</a>
             <a href="./validate.html">3. Validate</a>
             <a href="./dashboard.html">4. Dashboard</a>
-            <a href="./review.html">Review</a>
           </div>
         </details>
         <details class="nav-group">
           <summary>Codex for Marketing</summary>
           <div class="nav-submenu">
             <a href="./marketing.html">Overview</a>
-            <a href="./marketing-setup.html">Requirements</a>
             <a href="./marketing-brief.html">1. Brief</a>
             <a href="./marketing-creative.html">2. Creative</a>
             <a href="./marketing-handoff.html">3. Handoff</a>
@@ -49,18 +46,16 @@
       <aside class="lesson-sidebar">
         <p class="eyebrow">ChatGPT for Finance</p>
         <ol class="side-steps">
-          <li>Requirements</li>
           <li class="current">1. Find the story</li>
           <li>2. Create the model</li>
           <li>3. Validate assumptions</li>
           <li>4. Create dashboard</li>
-          <li>Review</li>
         </ol>
       </aside>
 
       <section class="lesson-main">
         <div class="lesson-hero">
-          <div class="lesson-kicker">Workflow 1 of 5</div>
+          <div class="lesson-kicker">Workflow 1 of 4</div>
           <h1>Find the finance story in the raw data</h1>
           <p class="lesson-lead">
             Use the company profile for business context, the country performance file for the
@@ -81,10 +76,10 @@
           <article class="io-card">
             <span>Outputs</span>
             <ul>
-              <li>A concise performance story with favorable and unfavorable drivers</li>
-              <li>Quality-of-growth callouts across revenue, margin, contribution profit, returns, ROAS, and fulfillment signals</li>
+              <li>A short finance brief with a headline and clear bullets</li>
+              <li>Favorable and unfavorable drivers by country or region</li>
+              <li>Quality-of-growth callouts across revenue, margin, returns, ROAS, and fulfillment signals</li>
               <li>Open verification items, risks, and questions to validate</li>
-              <li>A short finance one-pager the audience can scan quickly</li>
             </ul>
           </article>
         </div>
@@ -95,7 +90,7 @@
               <p class="eyebrow">Step by step</p>
               <h2>Run the workflow</h2>
             </div>
-            <span data-progress-count>0 of 4 completed</span>
+            <span data-progress-count>0 of 3 completed</span>
           </div>
           <ol class="workflow-steps">
             <li>
@@ -120,23 +115,20 @@
                   <div class="prompt-header">
                     <div>
                       <span class="step-chip">Copy prompt</span>
-                      <h3>Tell the Performance Story</h3>
+                      <h3>Create a Short Finance Brief</h3>
                     </div>
                     <button class="copy-button" data-copy-target="prompt-story">Copy</button>
                   </div>
-                  <pre id="prompt-story"><code>Use the uploaded ChillNest company profile, country performance file, and operating notes to tell me the story behind performance data.
+                  <pre id="prompt-story"><code>Use the uploaded ChillNest company profile, country performance CSV, and operating notes to create a finance brief under 150 words.
 
-Create a finance-ready readout with:
+Include:
+- a one-line headline
 - what changed and why
 - top favorable and unfavorable drivers by country or region
-- quality of growth: revenue, margin, contribution profit, returns, ROAS, logistics, and stockouts
-- items that need human verification
+- quality of growth: revenue, margin, returns, ROAS, logistics, and stockouts
+- 1-2 open questions, risks, or items that need human verification
 
-Use the company profile for what the business does and how it makes money. Use the country performance file for the numbers. Use the operating notes to explain likely drivers, risks, and business context.
-
-The audience is a finance organization and decision makers across multiple finance roles and levels of seniority.
-
-Cite the source file or field for every material claim.</code></pre>
+Use the profile for business context, the CSV for numbers, and the notes for likely explanations. Cite the source file or field for material claims.</code></pre>
                 </article>
               </div>
             </li>
@@ -146,35 +138,8 @@ Cite the source file or field for every material claim.</code></pre>
               </label>
               <span>Step 3</span>
               <div>
-                <h3>Check the evidence</h3>
-                <p>Look for field references next to numeric claims, profile references next to business context, and note references next to explanations.</p>
-              </div>
-            </li>
-            <li>
-              <label class="workflow-step-check">
-                <input type="checkbox" data-progress-item="story-step-4" aria-label="Mark step 4 complete">
-              </label>
-              <span>Step 4</span>
-              <div>
-                <h3>Create a one-page brief</h3>
-                <p>Turn the longer story into a short finance brief that leaders can scan quickly.</p>
-                <article class="prompt-block">
-                  <div class="prompt-header">
-                    <div>
-                      <span class="step-chip">Copy prompt</span>
-                      <h3>Short Finance Brief</h3>
-                    </div>
-                    <button class="copy-button" data-copy-target="prompt-story-brief">Copy</button>
-                  </div>
-                  <pre id="prompt-story-brief"><code>Turn this performance story into a short finance one-pager brief.
-
-Keep it under 150 words. Use:
-- a one-line headline
-- clear, organized bullet points
-- 1-2 open questions or risks to validate
-
-Make it concise enough for senior finance leaders and useful enough for finance partners across different roles.</code></pre>
-                </article>
+                <h3>Review the brief</h3>
+                <p>Check whether the story is coherent, source-backed, and useful enough for a finance audience before moving on.</p>
               </div>
             </li>
           </ol>
@@ -191,12 +156,14 @@ Make it concise enough for senior finance leaders and useful enough for finance 
 
         <div class="callout">
           <strong>Human review moment:</strong>
-          Ask yourself whether ChatGPT cited data fields for the claims it made. If not, ask it to
-          revise with source references before moving on.
+          Ask yourself whether the story makes sense and whether it is coherent with the data.
+          Look for source fields next to numeric claims and notes next to explanations. ChatGPT can
+          save a lot of time by creating the first draft, which is often the slowest part, but every
+          output still needs review, subject matter judgment, and approval before it is used.
         </div>
 
         <div class="lesson-actions">
-          <a class="button secondary" href="./setup.html">Back: requirements</a>
+          <a class="button secondary" href="./finance.html">Back: overview</a>
           <a class="button primary" href="./model.html">Next: create the model</a>
         </div>
       </section>
