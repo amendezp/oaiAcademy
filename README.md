@@ -10,7 +10,7 @@ The ChatGPT for Finance journey follows an analysis and modeling arc:
 2. Story: explain raw country and regional performance data in ChatGPT.
 3. Model: create a DCF model live in ChatGPT for Excel or Google Sheets.
 4. Validate: refresh assumptions with research or approved connectors.
-5. Dashboard: create a leadership-ready dashboard and briefing.
+5. Dashboard: create a dashboard and briefing for review.
 6. Review: check accuracy, assumptions, and human judgment before sharing.
 
 The Codex for Marketing journey follows a campaign-production arc:

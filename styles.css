@@ -673,7 +673,30 @@ body > footer {
 }
 
 .io-card {
+  position: relative;
+  overflow: hidden;
   min-height: 220px;
+  padding-top: 104px;
+}
+
+.io-card::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  left: 16px;
+  height: 64px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2563eb, #22d3ee);
+}
+
+.io-card:nth-child(2)::before {
+  background: linear-gradient(135deg, #d946ef, #fb7185, #fb923c);
+}
+
+.io-card:nth-child(2) span {
+  background: #fdf2f8;
+  color: #c026d3;
 }
 
 .io-card span,
