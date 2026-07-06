@@ -33,7 +33,7 @@ The Codex for Marketing journey follows a campaign-production arc:
 - `dashboard.html` - dashboard creation workflow
 - `review.html` - final review checklist
 - `marketing.html` - Codex for Marketing workflow overview
-- `marketing-setup.html` - Marketing requirements checklist and source-pack download
+- `marketing-setup.html` - Marketing requirements checklist and campaign source-file download
 - `marketing-brief.html` - marketing brief workflow
 - `marketing-creative.html` - creative direction and moodboard workflow
 - `marketing-handoff.html` - production handoff workflow
@@ -50,7 +50,7 @@ The Codex for Marketing journey follows a campaign-production arc:
 - `demo-files/chillnest_historical_balance_sheet.csv` - historical balance sheet
 - `demo-files/chillnest_historical_cash_flow.csv` - historical cash flow statement
 - `demo-files/chillnest_finance_source_pack.zip` - bundled ChatGPT for Finance source files
-- `demo-files/chillnest_marketing_source_pack.zip` - bundled Codex for Marketing source files
+- `demo-files/chillnest_campaign_source_files.zip` - bundled Codex for Marketing campaign source files
 
 ## Deploy To Vercel
 
