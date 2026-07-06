@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Validate Assumptions | ChatGPT for Finance</title>
-    <meta name="description" content="Validate assumptions with research and human review.">
+    <meta name="description" content="Use ChatGPT to validate finance assumptions with research and human review.">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
@@ -35,11 +35,11 @@
           <div class="nav-submenu">
             <a href="./marketing.html">Overview</a>
             <a href="./marketing-setup.html">Requirements</a>
-            <a href="./marketing-brief.html">Brief</a>
-            <a href="./marketing-creative.html">Creative</a>
-            <a href="./marketing-handoff.html">Handoff</a>
-            <a href="./marketing-assets.html">Assets</a>
-            <a href="./marketing-landing.html">Landing page</a>
+            <a href="./marketing-brief.html">1. Brief</a>
+            <a href="./marketing-creative.html">2. Creative</a>
+            <a href="./marketing-handoff.html">3. Handoff</a>
+            <a href="./marketing-assets.html">4. Assets</a>
+            <a href="./marketing-landing.html">5. Landing page</a>
           </div>
         </details>
       </nav>
@@ -62,27 +62,27 @@
         <div class="lesson-kicker">Step 3 of 5</div>
         <h1>Validate assumptions with research</h1>
         <p class="lesson-lead">
-          Keep working in the same workbook. Validate the highest-impact assumptions with sources,
-          update the review fields, and keep human approval visible.
+          Move back into ChatGPT for this workflow. Validate the highest-impact assumptions with
+          sourced research, then decide what should be applied to the workbook.
         </p>
 
         <div class="io-grid" aria-label="Workflow inputs and outputs">
           <article class="io-card">
             <span>Inputs</span>
             <ul>
-              <li>The DCF workbook created in Workflow 2</li>
-              <li>Editable assumption and review fields</li>
-              <li>ChatGPT for Sheets or Excel with Research/Search</li>
+              <li>The DCF model summary and assumption table from Workflow 2</li>
+              <li>Source files or exports that explain the current assumptions</li>
+              <li>ChatGPT with Research/Search enabled</li>
               <li>Internal country, regional, and cash flow context</li>
             </ul>
           </article>
           <article class="io-card">
             <span>Outputs</span>
             <ul>
-              <li>Updated assumption values with old value, new value, and as-of date</li>
+              <li>A validation table with old value, recommended value, and as-of date</li>
               <li>Source links and rationale for material updates</li>
               <li>Confidence and human review status for each key assumption</li>
-              <li>A favorable / unfavorable summary of model impact</li>
+              <li>A clear list of approved workbook updates for Workflow 4</li>
             </ul>
           </article>
         </div>
@@ -102,8 +102,8 @@
               </label>
               <span>Step 1</span>
               <div>
-                <h3>Stay in the same workbook</h3>
-                <p>Use the model you just created. This shows how Finance can refine the current file instead of starting over.</p>
+                <h3>Open ChatGPT</h3>
+                <p>Upload or paste the model summary, assumption table, and source context from the DCF workflow.</p>
               </div>
             </li>
             <li>
@@ -112,7 +112,7 @@
               </label>
               <span>Step 2</span>
               <div>
-                <h3>Use Research/Search or an approved finance connector</h3>
+                <h3>Use Research/Search or an approved finance source</h3>
                 <p>Validate external inputs like weather demand, FX, inflation, interest rates, and discount-rate context.</p>
               </div>
             </li>
@@ -123,18 +123,18 @@
               <span>Step 3</span>
               <div>
                 <h3>Paste the prompt below</h3>
-                <p>Ask ChatGPT to update only assumptions and review fields, while preserving model formulas.</p>
+                <p>Ask ChatGPT for a validation table and a clear recommendation, not a workbook edit.</p>
                 <article class="prompt-block featured-prompt">
                   <div class="prompt-header">
                     <div>
                       <span class="step-chip">Copy prompt</span>
-                      <h3>Validate + Refresh Assumptions</h3>
+                      <h3>Validate Assumptions</h3>
                     </div>
                     <button class="copy-button" data-copy-target="prompt-validate">Copy</button>
                   </div>
-                  <pre id="prompt-validate"><code>Use ChatGPT for Sheets to validate and refresh the key assumptions in this DCF.
+                  <pre id="prompt-validate"><code>Use the DCF summary, assumptions, and source files to validate the key assumptions.
 
-Use the Research/Search connector, or an approved finance-data connector, to check:
+Use Research/Search, or an approved finance source, to check:
 - heat or weather demand
 - FX and margin pressure
 - inflation or interest-rate pressure
@@ -142,11 +142,9 @@ Use the Research/Search connector, or an approved finance-data connector, to che
 - free cash flow conversion
 - discount rate and terminal growth
 
-Update only assumption and review fields. Do not overwrite formulas.
+Do not edit the workbook. Create a validation table with assumption, current value, recommended value, source, as-of date, confidence, rationale, and human review status.
 
-For each update, add source link, as-of date, old value, new value, confidence, human review status, and rationale.
-
-Recalculate the model and summarize what changed using favorable / unfavorable language.</code></pre>
+End with the exact changes Finance should apply in the workbook, plus a favorable / unfavorable summary of likely model impact.</code></pre>
                 </article>
               </div>
             </li>
@@ -156,8 +154,8 @@ Recalculate the model and summarize what changed using favorable / unfavorable l
               </label>
               <span>Step 4</span>
               <div>
-                <h3>Approve the judgment calls</h3>
-                <p>Check the source, confidence, and review status before treating any refreshed assumption as final.</p>
+                <h3>Approve what moves forward</h3>
+                <p>Decide which recommendations should be applied to the workbook in the next workflow.</p>
               </div>
             </li>
           </ol>
@@ -165,10 +163,10 @@ Recalculate the model and summarize what changed using favorable / unfavorable l
 
         <div class="workflow-summary">
           <p class="eyebrow">Workflow</p>
-          <h2>Refresh assumptions with sourced research and visible judgment.</h2>
+          <h2>Validate assumptions with sourced research and visible judgment.</h2>
           <p>
-            The point is not to let research autopilot the model. The point is to make assumptions,
-            source links, confidence, and human review status visible in the workbook.
+            The point is not to let research autopilot the model. The point is to use ChatGPT to
+            prepare sourced recommendations before any spreadsheet changes are made.
           </p>
         </div>
 
