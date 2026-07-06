@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Create the Model | ChatGPT for Finance Lab</title>
-    <meta name="description" content="Use ChatGPT for Sheets to create a finance forecast model.">
+    <meta name="description" content="Use ChatGPT for Sheets to create a finance DCF model.">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
@@ -42,10 +42,11 @@
 
       <section class="lesson-main">
         <div class="lesson-kicker">Step 2 of 5</div>
-        <h1>Create a country-level forecast model</h1>
+        <h1>Create a DCF model</h1>
         <p class="lesson-lead">
-          Move into ChatGPT for Sheets or Excel. Use the country data and monthly regional data
-          to create the model live instead of starting from a prebuilt template.
+          Move into ChatGPT for Sheets or Excel. Use the historical financial statements, country
+          data, and monthly regional data to create the DCF model live instead of starting from a
+          prebuilt template.
         </p>
 
         <div class="learning-panel">
@@ -53,14 +54,14 @@
             <h2>Use the spreadsheet here</h2>
             <p>
               This is where ChatGPT for Sheets is most useful: formulas, model structure,
-              scenarios, editable assumptions, and documentation.
+              scenarios, DCF assumptions, valuation outputs, and documentation.
             </p>
           </article>
           <article>
             <h2>Model the economics</h2>
             <p>
-              Do not stop at revenue. Forecast contribution profit and add a lightweight free
-              cash flow view using inventory investment, working capital, and capex.
+              Do not stop at revenue. Build from historical financial statements into a free cash
+              flow forecast, terminal value, enterprise value, and sensitivity table.
             </p>
           </article>
         </div>
@@ -69,28 +70,29 @@
           <div class="prompt-header">
             <div>
               <span class="step-chip">Copy prompt</span>
-              <h3>Forecast Model Creation</h3>
+              <h3>DCF Model Creation</h3>
             </div>
             <button class="copy-button" data-copy-target="prompt-model">Copy</button>
           </div>
-          <pre id="prompt-model"><code>Create a country-level forecast model in this workbook using the ChillNest country performance data and monthly regional performance data.
+          <pre id="prompt-model"><code>Create a DCF model in this workbook using the ChillNest company profile, historical P&amp;L, balance sheet, cash flow statement, country performance data, and monthly regional performance data.
 
-Workflow: Forecast Model Creation.
+Workflow: DCF Model Creation.
 
 Build the model from scratch. Include:
+- historical statement summary: revenue, gross margin, EBITDA, EBIT, net income, working capital, capex, and free cash flow
+- forecast assumptions section for revenue growth, gross margin, operating expense, tax rate, working capital, capex, and terminal growth
 - base, upside, and downside revenue forecast
-- forecast units
-- contribution profit forecast
-- regional monthly trend and seasonality check
-- lightweight free cash flow forecast using operating cash flow, inventory investment, working capital change, and capex where available
-- marketing efficiency impact
-- return-rate impact
-- logistics cost impact
-- stockout risk adjustment
+- regional monthly trend and seasonality check to inform near-term revenue assumptions
+- country performance bridge to explain near-term growth quality
+- free cash flow forecast for 5 years
+- terminal value
+- enterprise value
+- net debt adjustment using cash and debt from the balance sheet
+- implied equity value
+- sensitivity table for discount rate and terminal growth
 - investment priority by country: Invest, Test, Hold, or Pause
-- optional DCF-ready output: forecast free cash flow by region and total company
 
-Create editable assumption inputs for each country:
+Create editable assumption inputs:
 - weather_demand_lift
 - marketing_efficiency_adjustment
 - return_rate_adjustment
@@ -99,12 +101,20 @@ Create editable assumption inputs for each country:
 - inflation_or_interest_rate_cost_adjustment
 - regional_trend_adjustment
 - free_cash_flow_conversion_adjustment
+- revenue_growth_by_year
+- gross_margin_by_year
+- opex_as_pct_of_revenue
+- working_capital_as_pct_of_revenue
+- capex_as_pct_of_revenue
+- tax_rate
+- discount_rate
+- terminal_growth_rate
 
 Use formulas for calculated outputs. Make the model easy for Finance to audit.
 
 Add a brief model documentation section that explains each formula in plain English.
 
-Clearly label which outputs are country-level, regional, and total company.</code></pre>
+Clearly label which outputs are historical, forecast, valuation, country-level, regional, and total company.</code></pre>
         </article>
 
         <div class="checklist-card compact">
@@ -117,7 +127,7 @@ Clearly label which outputs are country-level, regional, and total company.</cod
           </label>
           <label class="check-row">
             <input type="checkbox" data-progress-item="model-assumptions">
-            <span>Assumption inputs are editable and separated from outputs.</span>
+            <span>DCF assumption inputs are editable and separated from outputs.</span>
           </label>
           <label class="check-row">
             <input type="checkbox" data-progress-item="model-docs">

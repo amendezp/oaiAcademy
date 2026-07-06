@@ -74,7 +74,7 @@
             </div>
             <button class="copy-button" data-copy-target="prompt-dashboard">Copy</button>
           </div>
-          <pre id="prompt-dashboard"><code>Create a leadership-ready finance dashboard from the refreshed ChillNest forecast model.
+          <pre id="prompt-dashboard"><code>Create a leadership-ready finance dashboard from the refreshed ChillNest DCF model.
 
 Workflow: Leadership Dashboard Creation.
 
@@ -87,14 +87,15 @@ Top row: create high-level KPI cards for:
 - Runway
 - Budget vs. Actual
 
-Use actual workbook values where available. Use the monthly regional performance file for regional trend, budget vs. actual, free cash flow, and DCF-ready context.
-If Burn Rate, Runway, or any other KPI is not available in the source data, create a clearly labeled placeholder panel with a sample number and mark it "Placeholder - needs source data." Do not imply placeholder values are real.
+Use actual workbook values where available. Use the historical statements for free cash flow, cash, debt, capex, and DCF outputs. Use the monthly regional performance file for regional trend, budget vs. actual, free cash flow, and DCF-ready context.
+If Burn Rate, Runway, or any other KPI is not meaningful because the company is cash-flow positive, label it "Not applicable - positive FCF." If a KPI is not available in the source data, create a clearly labeled placeholder panel with a sample number and mark it "Placeholder - needs source data." Do not imply placeholder values are real.
 
 Dashboard sections:
 - KPI summary panel with current value, plan or target, variance, and favorable / unfavorable status
 - Country performance panel ranked by investment priority: Invest, Test, Hold, or Pause
 - Budget vs. Actual panel showing revenue and contribution profit variance
 - Regional trend panel showing monthly revenue, gross margin, and free cash flow by region
+- DCF panel showing enterprise value, net debt, implied equity value, and key valuation assumptions
 - Scenario panel showing base, upside, and downside forecast
 - Assumption review panel showing items marked Needs Review or Do Not Use
 - Key takeaways panel with the top 5 leadership insights

@@ -1,0 +1,25 @@
+ChillNest Company Profile
+
+ChillNest is a synthetic direct-to-consumer commerce company used for the ChatGPT for Finance Lab. The company sells cooling blankets online across North America, Latin America, Europe, and Asia Pacific. Its core product is a breathable, moisture-wicking blanket positioned for warm-weather sleep, heat-wave comfort, and premium home wellness.
+
+Business Model
+
+ChillNest generates revenue through online sales on its own ecommerce site and selected marketplace channels. Demand is seasonal and weather-sensitive: warmer months, heat waves, and regional climate patterns can create sharp sales spikes. The company invests heavily in paid search, social campaigns, influencer partnerships, and marketplace promotion to capture demand.
+
+Finance Context
+
+The lab focuses on a common Finance question: when revenue grows quickly, is that growth durable, profitable, and cash-generative? ChillNest gives learners a practical case because growth varies by country and region. Some markets show strong demand and healthy contribution profit, while others require caution because returns, logistics costs, FX pressure, inventory investment, or weak marketing efficiency can reduce free cash flow.
+
+Why This Case Works For A DCF
+
+A DCF needs more than a single month of sales data. It needs a view of historical revenue, margin, operating expense, working capital, capex, and free cash flow. ChillNest includes country performance data, monthly regional performance data, operating context, and simple historical financial statements so learners can connect operating drivers to forecast assumptions and cash flow.
+
+Key Learning Themes
+
+- Revenue growth is not the same as profitable growth.
+- Country performance should be reviewed alongside regional trends.
+- Inventory investment and working capital can turn strong demand into weaker free cash flow.
+- DCF assumptions should be source-backed, clearly labeled, and reviewed by a human.
+- Leadership dashboards should distinguish source-backed metrics from placeholders.
+
+The company, data, and operating notes are synthetic and intended only for training and demonstration.

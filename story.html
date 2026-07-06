@@ -44,8 +44,9 @@
         <div class="lesson-kicker">Step 1 of 5</div>
         <h1>Find the finance story in the raw data</h1>
         <p class="lesson-lead">
-          Start in ChatGPT. Upload both CSVs and the operating notes, then ask for a story that
-          separates growth, profitability, cash flow, risk, and open questions.
+          Start in ChatGPT. Upload the company profile, operating notes, country performance,
+          regional performance, and historical statements. Ask for a story that separates growth,
+          profitability, cash flow, risk, and open questions.
         </p>
 
         <div class="learning-panel">
@@ -75,7 +76,7 @@
           </div>
           <pre id="prompt-story"><code>Act as a finance analyst.
 
-Use the uploaded ChillNest country performance data, monthly regional performance data, and operating notes.
+Use the uploaded ChillNest company profile, country performance data, monthly regional performance data, operating notes, historical P&amp;L, balance sheet, and cash flow statement.
 
 Tell me the story behind the raw data. Do not just summarize rows.
 
@@ -84,13 +85,14 @@ Separate:
 - profitable growth
 - regional trend and seasonality
 - cash flow or DCF-relevant signals
+- historical P&amp;L, balance sheet, and cash flow context
 - operational risk
 - country-level drivers
 - items that require human verification before leadership sees the analysis
 
 For each material claim, point to the source file or field that supports it.
 
-End with 5 finance questions this analysis should answer in the model, including at least one question about forecast durability and one question about free cash flow conversion.</code></pre>
+End with 5 finance questions this analysis should answer in the DCF model, including at least one question about forecast durability, one question about free cash flow conversion, and one question about working capital.</code></pre>
         </article>
 
         <div class="callout">

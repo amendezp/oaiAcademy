@@ -6,7 +6,7 @@ Learners move through a guided journey:
 
 1. Setup: download files and prepare tools.
 2. Story: explain raw country and regional performance data in ChatGPT.
-3. Model: create a forecast model live in ChatGPT for Excel or Google Sheets.
+3. Model: create a DCF model live in ChatGPT for Excel or Google Sheets.
 4. Validate: refresh assumptions with research or approved connectors and apply Finance house style.
 5. Dashboard: create a leadership-ready dashboard and briefing.
 6. Review: check accuracy, assumptions, and human judgment before sharing.
@@ -25,6 +25,11 @@ Learners move through a guided journey:
 - `demo-files/chillnest_country_performance.csv` - synthetic country-level finance data
 - `demo-files/chillnest_monthly_region_performance.csv` - synthetic monthly regional trend and free cash flow data
 - `demo-files/chillnest_operating_notes.txt` - synthetic operating context
+- `demo-files/chillnest_company_profile.txt` - one-page company context for upload
+- `demo-files/chillnest_company_profile.pdf` - one-page company context for reading
+- `demo-files/chillnest_historical_pl.csv` - historical P&L
+- `demo-files/chillnest_historical_balance_sheet.csv` - historical balance sheet
+- `demo-files/chillnest_historical_cash_flow.csv` - historical cash flow statement
 
 ## Deploy To Vercel
 

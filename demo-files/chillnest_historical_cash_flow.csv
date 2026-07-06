@@ -1,0 +1,5 @@
+period,fiscal_year,net_income_usd,depreciation_amortization_usd,change_accounts_receivable_usd,change_inventory_usd,change_accounts_payable_accrued_usd,operating_cash_flow_usd,capex_usd,free_cash_flow_usd,debt_issued_repaid_usd,ending_cash_usd
+FY2023,2023,105000,180000,-90000,-280000,210000,125000,-260000,-135000,500000,980000
+FY2024,2024,375000,240000,-140000,-430000,350000,395000,-460000,-65000,150000,1280000
+FY2025,2025,810000,320000,-180000,-580000,510000,880000,-600000,280000,-100000,1920000
+LTM Jun 2026,2026,907500,390000,-120000,-680000,390000,887500,-630000,257500,-100000,2180000
