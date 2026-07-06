@@ -334,6 +334,7 @@ body > footer {
 
 .button.secondary {
   background: #ffffff;
+  color: var(--ink);
 }
 
 .case-card,
@@ -1133,14 +1134,15 @@ code {
 
   .top-nav {
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     gap: 6px;
     margin-top: 12px;
     padding: 4px;
     border: 1px solid var(--soft-line);
-    border-radius: 999px;
+    border-radius: 24px;
     background: #ffffff;
-    overflow-x: auto;
+    overflow: visible;
   }
 
   .top-nav a,
@@ -1175,8 +1177,7 @@ code {
     box-shadow: var(--soft-shadow);
   }
 
-  .nav-group[open]:hover .nav-submenu,
-  .nav-group[open]:focus-within .nav-submenu {
+  .nav-group[open] .nav-submenu {
     display: grid;
   }
 

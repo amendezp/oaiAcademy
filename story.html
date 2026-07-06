@@ -63,9 +63,8 @@
           <div class="lesson-kicker">Workflow 1 of 5</div>
           <h1>Find the finance story in the raw data</h1>
           <p class="lesson-lead">
-            Start in ChatGPT. Upload the company profile, operating notes, country performance,
-            regional performance, and historical statements. Ask for a story that separates growth,
-            profitability, cash flow, risk, and open questions.
+            Use the country performance file for the numbers and the operating notes for context.
+            Turn both into a clear story of what changed, why it changed, and what needs review.
           </p>
         </div>
 
@@ -73,19 +72,18 @@
           <article class="io-card">
             <span>Inputs</span>
             <ul>
-              <li>ChillNest company profile</li>
+              <li>Country performance CSV</li>
               <li>Operating notes from Finance, Marketing, Supply Chain, and Support</li>
-              <li>Country and monthly regional performance data</li>
-              <li>Historical P&amp;L, balance sheet, and cash flow files</li>
+              <li>Company profile, regional data, and historical statements saved for Workflow 2</li>
             </ul>
           </article>
           <article class="io-card">
             <span>Outputs</span>
             <ul>
               <li>A concise performance story with favorable and unfavorable drivers</li>
-              <li>Quality-of-growth callouts across revenue, margin, returns, and cash flow</li>
-              <li>Open verification items before the model is built</li>
-              <li>Three questions the DCF model should answer</li>
+              <li>Quality-of-growth callouts across revenue, margin, contribution profit, returns, ROAS, and fulfillment signals</li>
+              <li>Open verification items, risks, and questions to validate</li>
+              <li>A short finance one-pager the audience can scan quickly</li>
             </ul>
           </article>
         </div>
@@ -105,8 +103,8 @@
               </label>
               <span>Step 1</span>
               <div>
-                <h3>Upload the files</h3>
-                <p>Open ChatGPT and upload the ChillNest profile, notes, regional data, country data, and historical statements.</p>
+                <h3>Upload two files</h3>
+                <p>Start with the country performance CSV and the operating notes. Keep the other files for the next workflow.</p>
               </div>
             </li>
             <li>
@@ -125,17 +123,19 @@
                     </div>
                     <button class="copy-button" data-copy-target="prompt-story">Copy</button>
                   </div>
-                  <pre id="prompt-story"><code>Use the uploaded ChillNest files to tell the story behind performance.
+                  <pre id="prompt-story"><code>Use the uploaded ChillNest country performance file and operating notes to tell me the story behind performance data.
 
 Create a finance-ready readout with:
 - what changed and why
 - top favorable and unfavorable drivers by country or region
-- quality of growth: revenue, margin, returns, ROAS, and free cash flow
+- quality of growth: revenue, margin, contribution profit, returns, ROAS, logistics, and stockouts
 - items that need human verification
 
-Cite the source file or field for every material claim.
+Use the country performance file for the numbers. Use the operating notes to explain likely drivers, risks, and business context.
 
-End with 3 questions the DCF model should answer.</code></pre>
+The audience is a finance organization and decision makers across multiple finance roles and levels of seniority.
+
+Cite the source file or field for every material claim.</code></pre>
                 </article>
               </div>
             </li>
@@ -146,7 +146,7 @@ End with 3 questions the DCF model should answer.</code></pre>
               <span>Step 3</span>
               <div>
                 <h3>Check the evidence</h3>
-                <p>Look for file or field references next to material claims. Ask for citations if they are missing.</p>
+                <p>Look for field references next to numeric claims and note references next to explanations. Ask for citations if they are missing.</p>
               </div>
             </li>
             <li>
@@ -155,8 +155,25 @@ End with 3 questions the DCF model should answer.</code></pre>
               </label>
               <span>Step 4</span>
               <div>
-                <h3>Carry forward the questions</h3>
-                <p>Save the three DCF questions. They become the bridge into the spreadsheet model.</p>
+                <h3>Create a one-page brief</h3>
+                <p>Turn the longer story into a short finance brief that leaders can scan quickly.</p>
+                <article class="prompt-block">
+                  <div class="prompt-header">
+                    <div>
+                      <span class="step-chip">Copy prompt</span>
+                      <h3>Short Finance Brief</h3>
+                    </div>
+                    <button class="copy-button" data-copy-target="prompt-story-brief">Copy</button>
+                  </div>
+                  <pre id="prompt-story-brief"><code>Turn this performance story into a short finance one-pager brief.
+
+Keep it under 150 words. Use:
+- a one-line headline
+- clear, organized bullet points
+- 1-2 open questions or risks to validate
+
+Make it concise enough for senior finance leaders and useful enough for finance partners across different roles.</code></pre>
+                </article>
               </div>
             </li>
           </ol>

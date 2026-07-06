@@ -2,6 +2,33 @@ const copyButtons = document.querySelectorAll("[data-copy-target]");
 const progressItems = document.querySelectorAll("[data-progress-item]");
 const workflowProgressItems = document.querySelectorAll(".workflow-steps [data-progress-item]");
 const progressCount = document.querySelector("[data-progress-count]");
+const navGroups = document.querySelectorAll(".top-nav .nav-group");
+const responsiveNavQuery = window.matchMedia("(max-width: 1040px)");
+
+function syncNavGroupsForViewport() {
+  navGroups.forEach((group) => {
+    if (responsiveNavQuery.matches) {
+      group.removeAttribute("open");
+    } else if (group.classList.contains("active")) {
+      group.setAttribute("open", "");
+    }
+  });
+}
+
+navGroups.forEach((group) => {
+  group.addEventListener("toggle", () => {
+    if (!responsiveNavQuery.matches || !group.open) return;
+
+    navGroups.forEach((otherGroup) => {
+      if (otherGroup !== group) otherGroup.removeAttribute("open");
+    });
+  });
+});
+
+if (navGroups.length) {
+  syncNavGroupsForViewport();
+  responsiveNavQuery.addEventListener("change", syncNavGroupsForViewport);
+}
 
 async function copyText(text) {
   if (navigator.clipboard?.writeText) {
