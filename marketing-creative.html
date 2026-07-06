@@ -66,6 +66,58 @@
           direction, visual language, sample lines, and the direction to review.
         </p>
 
+        <div class="step-section">
+          <div class="workflow-header compact-heading">
+            <div class="section-heading">
+              <p class="eyebrow">Step by step</p>
+              <h2>Run the workflow</h2>
+            </div>
+            <span data-progress-count>0 of 3 completed</span>
+          </div>
+          <ol class="workflow-steps">
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="marketing-creative-step-1" aria-label="Mark step 1 complete">
+              </label>
+              <span>Step 1</span>
+              <div>
+                <h3>Review the brief</h3>
+                <p>Confirm the brief has a clear audience, insight, product story, and claims boundaries.</p>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="marketing-creative-step-2" aria-label="Mark step 2 complete">
+              </label>
+              <span>Step 2</span>
+              <div>
+                <h3>Paste the prompt below</h3>
+                <p>Ask Codex for multiple creative worlds, then choose or adjust the one with the strongest fit.</p>
+                <article class="prompt-block featured-prompt">
+                  <div class="prompt-header">
+                    <div>
+                      <span class="step-chip">Copy prompt</span>
+                      <h3>Brief To Creative World</h3>
+                    </div>
+                    <button class="copy-button" data-copy-target="prompt-marketing-creative">Copy</button>
+                  </div>
+                  <pre id="prompt-marketing-creative"><code>Take the brief and explore a few creative worlds for the campaign. Give each one a moodboard direction, a visual language, a few sample lines, and a clear reason it could work. Recommend your favorite.</code></pre>
+                </article>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="marketing-creative-step-3" aria-label="Mark step 3 complete">
+              </label>
+              <span>Step 3</span>
+              <div>
+                <h3>Refine the direction</h3>
+                <p>If it gets generic, ask for a version that feels more specific to the brand and audience.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
         <div class="workflow-summary">
           <p class="eyebrow">Workflow</p>
           <h2>Move from strategic brief to creative territory.</h2>
@@ -97,47 +149,6 @@
             </ul>
           </article>
         </div>
-
-        <div class="step-section">
-          <div class="section-heading compact-heading">
-            <p class="eyebrow">Step by step</p>
-            <h2>Run the workflow</h2>
-          </div>
-          <ol class="workflow-steps">
-            <li>
-              <span>Step 1</span>
-              <div>
-                <h3>Review the brief</h3>
-                <p>Confirm the brief has a clear audience, insight, product story, and claims boundaries.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 2</span>
-              <div>
-                <h3>Paste the prompt below</h3>
-                <p>Ask Codex for multiple creative worlds, then choose or adjust the one with the strongest fit.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 3</span>
-              <div>
-                <h3>Refine the direction</h3>
-                <p>If it gets generic, ask for a version that feels more specific to the brand and audience.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-
-        <article class="prompt-block featured-prompt">
-          <div class="prompt-header">
-            <div>
-              <span class="step-chip">Copy prompt</span>
-              <h3>Brief To Creative World</h3>
-            </div>
-            <button class="copy-button" data-copy-target="prompt-marketing-creative">Copy</button>
-          </div>
-          <pre id="prompt-marketing-creative"><code>Take the brief and explore a few creative worlds for the campaign. Give each one a moodboard direction, a visual language, a few sample lines, and a clear reason it could work. Recommend your favorite.</code></pre>
-        </article>
 
         <div class="callout">
           <strong>Human review moment:</strong>

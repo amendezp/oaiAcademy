@@ -602,19 +602,25 @@ body > footer {
 
 .lesson-main {
   width: min(100%, 1120px);
-  padding: 40px;
+  padding: 32px 40px 40px;
+}
+
+.lesson-main h1 {
+  max-width: 900px;
+  font-size: clamp(34px, 4vw, 56px);
+  line-height: 1.06;
 }
 
 .lesson-kicker {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   background: var(--sun);
   color: #74520f;
 }
 
 .lesson-lead {
-  max-width: 840px;
-  margin-top: 22px;
-  font-size: clamp(18px, 2vw, 23px);
+  max-width: 760px;
+  margin-top: 12px;
+  font-size: clamp(17px, 1.6vw, 20px);
 }
 
 .learning-panel,
@@ -625,6 +631,10 @@ body > footer {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
   margin-top: 34px;
+}
+
+.io-grid {
+  margin-top: 24px;
 }
 
 .learning-panel article,
@@ -658,18 +668,19 @@ body > footer {
 }
 
 .workflow-summary {
-  max-width: 920px;
-  margin-top: 34px;
+  max-width: 860px;
+  margin-top: 24px;
+  padding: 20px 22px;
   background: linear-gradient(120deg, #ffffff 0%, #effbfc 100%);
 }
 
 .workflow-summary h2 {
-  font-size: clamp(26px, 3.2vw, 42px);
+  font-size: clamp(24px, 2.8vw, 36px);
 }
 
 .workflow-summary p {
-  margin-top: 14px;
-  font-size: 18px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
 .io-card {
@@ -727,11 +738,29 @@ body > footer {
 }
 
 .step-section {
-  margin-top: 38px;
+  margin-top: 32px;
 }
 
 .compact-heading {
   margin-bottom: 18px;
+}
+
+.workflow-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: end;
+}
+
+.workflow-header .section-heading {
+  margin: 0;
+}
+
+.workflow-header span {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 750;
+  white-space: nowrap;
 }
 
 .workflow-steps {
@@ -744,9 +773,34 @@ body > footer {
 
 .workflow-steps li {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: auto auto minmax(0, 1fr);
   gap: 16px;
   align-items: start;
+}
+
+.workflow-step-check {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  min-height: 28px;
+}
+
+.workflow-step-check input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--aqua-dark);
+  cursor: pointer;
+}
+
+.workflow-steps li:has(.workflow-step-check input:checked) {
+  border-color: rgba(8, 145, 178, 0.35);
+  background: #f7feff;
+}
+
+.workflow-steps li:has(.workflow-step-check input:checked) h3,
+.workflow-steps li:has(.workflow-step-check input:checked) p {
+  opacity: 0.72;
 }
 
 .workflow-steps h3 {
@@ -881,6 +935,18 @@ body > footer {
   margin-top: 34px;
   overflow: hidden;
   box-shadow: var(--soft-shadow);
+}
+
+.workflow-steps .prompt-block {
+  margin-top: 18px;
+}
+
+.workflow-steps .prompt-header {
+  padding: 18px 20px;
+}
+
+.workflow-steps pre {
+  padding: 20px;
 }
 
 .featured-prompt {
@@ -1067,12 +1133,28 @@ code {
   }
 
   .nav-group {
+    position: relative;
     min-width: 220px;
   }
 
   .nav-submenu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 30;
+    min-width: 260px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding-left: 0;
+    padding: 8px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: var(--soft-shadow);
+  }
+
+  .nav-group[open]:hover .nav-submenu,
+  .nav-group[open]:focus-within .nav-submenu {
+    display: grid;
   }
 
   .nav-submenu a {
@@ -1148,6 +1230,24 @@ code {
   .kpi-preview,
   .side-steps {
     grid-template-columns: 1fr;
+  }
+
+  .workflow-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .workflow-header span {
+    white-space: normal;
+  }
+
+  .workflow-steps li {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .workflow-steps li > div {
+    grid-column: 1 / -1;
   }
 
   .case-card {

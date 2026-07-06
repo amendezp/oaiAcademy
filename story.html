@@ -67,6 +67,78 @@
           profitability, cash flow, risk, and open questions.
         </p>
 
+        <div class="step-section">
+          <div class="workflow-header compact-heading">
+            <div class="section-heading">
+              <p class="eyebrow">Step by step</p>
+              <h2>Run the workflow</h2>
+            </div>
+            <span data-progress-count>0 of 4 completed</span>
+          </div>
+          <ol class="workflow-steps">
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="story-step-1" aria-label="Mark step 1 complete">
+              </label>
+              <span>Step 1</span>
+              <div>
+                <h3>Upload the files</h3>
+                <p>Open ChatGPT and upload the ChillNest profile, notes, regional data, country data, and historical statements.</p>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="story-step-2" aria-label="Mark step 2 complete">
+              </label>
+              <span>Step 2</span>
+              <div>
+                <h3>Paste the prompt below</h3>
+                <p>Use the copy button, then run the prompt in the same ChatGPT conversation.</p>
+                <article class="prompt-block">
+                  <div class="prompt-header">
+                    <div>
+                      <span class="step-chip">Copy prompt</span>
+                      <h3>Tell the Performance Story</h3>
+                    </div>
+                    <button class="copy-button" data-copy-target="prompt-story">Copy</button>
+                  </div>
+                  <pre id="prompt-story"><code>Use the uploaded ChillNest files to tell the story behind performance.
+
+Create a finance-ready readout with:
+- what changed and why
+- top favorable and unfavorable drivers by country or region
+- quality of growth: revenue, margin, returns, ROAS, and free cash flow
+- items that need human verification
+
+Cite the source file or field for every material claim.
+
+End with 3 questions the DCF model should answer.</code></pre>
+                </article>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="story-step-3" aria-label="Mark step 3 complete">
+              </label>
+              <span>Step 3</span>
+              <div>
+                <h3>Check the evidence</h3>
+                <p>Look for file or field references next to material claims. Ask for citations if they are missing.</p>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="story-step-4" aria-label="Mark step 4 complete">
+              </label>
+              <span>Step 4</span>
+              <div>
+                <h3>Carry forward the questions</h3>
+                <p>Save the three DCF questions. They become the bridge into the spreadsheet model.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
         <div class="workflow-summary">
           <p class="eyebrow">Workflow</p>
           <h2>Turn messy raw data into a clear finance story.</h2>
@@ -98,64 +170,6 @@
             </ul>
           </article>
         </div>
-
-        <div class="step-section">
-          <div class="section-heading compact-heading">
-            <p class="eyebrow">Step by step</p>
-            <h2>Run the workflow</h2>
-          </div>
-          <ol class="workflow-steps">
-            <li>
-              <span>Step 1</span>
-              <div>
-                <h3>Upload the files</h3>
-                <p>Open ChatGPT and upload the ChillNest profile, notes, regional data, country data, and historical statements.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 2</span>
-              <div>
-                <h3>Paste the prompt below</h3>
-                <p>Use the copy button, then run the prompt in the same ChatGPT conversation.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 3</span>
-              <div>
-                <h3>Check the evidence</h3>
-                <p>Look for file or field references next to material claims. Ask for citations if they are missing.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 4</span>
-              <div>
-                <h3>Carry forward the questions</h3>
-                <p>Save the three DCF questions. They become the bridge into the spreadsheet model.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-
-        <article class="prompt-block">
-          <div class="prompt-header">
-            <div>
-              <span class="step-chip">Copy prompt</span>
-              <h3>Tell the Performance Story</h3>
-            </div>
-            <button class="copy-button" data-copy-target="prompt-story">Copy</button>
-          </div>
-          <pre id="prompt-story"><code>Use the uploaded ChillNest files to tell the story behind performance.
-
-Create a finance-ready readout with:
-- what changed and why
-- top favorable and unfavorable drivers by country or region
-- quality of growth: revenue, margin, returns, ROAS, and free cash flow
-- items that need human verification
-
-Cite the source file or field for every material claim.
-
-End with 3 questions the DCF model should answer.</code></pre>
-        </article>
 
         <div class="callout">
           <strong>Human review moment:</strong>

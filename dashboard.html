@@ -66,6 +66,83 @@
           not decoration; the goal is fast decision support with visible review status.
         </p>
 
+        <div class="step-section">
+          <div class="workflow-header compact-heading">
+            <div class="section-heading">
+              <p class="eyebrow">Step by step</p>
+              <h2>Create the dashboard</h2>
+            </div>
+            <span data-progress-count>0 of 4 completed</span>
+          </div>
+          <ol class="workflow-steps">
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="dashboard-step-1" aria-label="Mark step 1 complete">
+              </label>
+              <span>Step 1</span>
+              <div>
+                <h3>Stay in the refreshed workbook</h3>
+                <p>Use the DCF and validated assumptions from the prior workflow as the dashboard source.</p>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="dashboard-step-2" aria-label="Mark step 2 complete">
+              </label>
+              <span>Step 2</span>
+              <div>
+                <h3>Paste the prompt below</h3>
+                <p>Ask ChatGPT to create the dashboard layout, visuals, metric labels, and leadership brief.</p>
+                <article class="prompt-block featured-prompt">
+                  <div class="prompt-header">
+                    <div>
+                      <span class="step-chip">Copy prompt</span>
+                      <h3>Create the Dashboard</h3>
+                    </div>
+                    <button class="copy-button" data-copy-target="prompt-dashboard">Copy</button>
+                  </div>
+                  <pre id="prompt-dashboard"><code>Create a review-ready dashboard from the refreshed ChillNest DCF.
+
+Use clean panels for:
+- Revenue
+- Gross Margin
+- Burn Rate
+- Runway
+- Budget vs. Actual
+
+Add views for regional trends, country priorities, DCF valuation, scenarios, assumption review, and top takeaways.
+
+Include at least 3 visuals. Label each metric as source-backed, calculated, externally validated, or placeholder.
+
+If a KPI is not meaningful, mark it "Not applicable." If data is missing, mark it "Placeholder - needs source data."
+
+Finish with a concise leadership brief using favorable / unfavorable language: recommendation, risks, open questions, and decisions needed.</code></pre>
+                </article>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="dashboard-step-3" aria-label="Mark step 3 complete">
+              </label>
+              <span>Step 3</span>
+              <div>
+                <h3>Check every KPI label</h3>
+                <p>Confirm each metric is marked as source-backed, calculated, externally validated, placeholder, or not applicable.</p>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="dashboard-step-4" aria-label="Mark step 4 complete">
+              </label>
+              <span>Step 4</span>
+              <div>
+                <h3>Review the brief</h3>
+                <p>Make sure the summary separates what happened, what changed in the model, and what leaders need to decide.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
         <div class="workflow-summary">
           <p class="eyebrow">Workflow</p>
           <h2>Turn the refreshed model into a scannable dashboard.</h2>
@@ -97,69 +174,6 @@
             </ul>
           </article>
         </div>
-
-        <div class="step-section">
-          <div class="section-heading compact-heading">
-            <p class="eyebrow">Step by step</p>
-            <h2>Create the dashboard</h2>
-          </div>
-          <ol class="workflow-steps">
-            <li>
-              <span>Step 1</span>
-              <div>
-                <h3>Stay in the refreshed workbook</h3>
-                <p>Use the DCF and validated assumptions from the prior workflow as the dashboard source.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 2</span>
-              <div>
-                <h3>Paste the prompt below</h3>
-                <p>Ask ChatGPT to create the dashboard layout, visuals, metric labels, and leadership brief.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 3</span>
-              <div>
-                <h3>Check every KPI label</h3>
-                <p>Confirm each metric is marked as source-backed, calculated, externally validated, placeholder, or not applicable.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 4</span>
-              <div>
-                <h3>Review the brief</h3>
-                <p>Make sure the summary separates what happened, what changed in the model, and what leaders need to decide.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-
-        <article class="prompt-block featured-prompt">
-          <div class="prompt-header">
-            <div>
-              <span class="step-chip">Copy prompt</span>
-              <h3>Create the Dashboard</h3>
-            </div>
-            <button class="copy-button" data-copy-target="prompt-dashboard">Copy</button>
-          </div>
-          <pre id="prompt-dashboard"><code>Create a review-ready dashboard from the refreshed ChillNest DCF.
-
-Use clean panels for:
-- Revenue
-- Gross Margin
-- Burn Rate
-- Runway
-- Budget vs. Actual
-
-Add views for regional trends, country priorities, DCF valuation, scenarios, assumption review, and top takeaways.
-
-Include at least 3 visuals. Label each metric as source-backed, calculated, externally validated, or placeholder.
-
-If a KPI is not meaningful, mark it "Not applicable." If data is missing, mark it "Placeholder - needs source data."
-
-Finish with a concise leadership brief using favorable / unfavorable language: recommendation, risks, open questions, and decisions needed.</code></pre>
-        </article>
 
         <div class="callout">
           <strong>Design check:</strong>

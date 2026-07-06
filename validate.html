@@ -66,6 +66,82 @@
           update the review fields, and keep human approval visible.
         </p>
 
+        <div class="step-section">
+          <div class="workflow-header compact-heading">
+            <div class="section-heading">
+              <p class="eyebrow">Step by step</p>
+              <h2>Validate the assumptions</h2>
+            </div>
+            <span data-progress-count>0 of 4 completed</span>
+          </div>
+          <ol class="workflow-steps">
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="validate-step-1" aria-label="Mark step 1 complete">
+              </label>
+              <span>Step 1</span>
+              <div>
+                <h3>Stay in the same workbook</h3>
+                <p>Use the model you just created. This shows how Finance can refine the current file instead of starting over.</p>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="validate-step-2" aria-label="Mark step 2 complete">
+              </label>
+              <span>Step 2</span>
+              <div>
+                <h3>Use Research/Search or an approved finance connector</h3>
+                <p>Validate external inputs like weather demand, FX, inflation, interest rates, and discount-rate context.</p>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="validate-step-3" aria-label="Mark step 3 complete">
+              </label>
+              <span>Step 3</span>
+              <div>
+                <h3>Paste the prompt below</h3>
+                <p>Ask ChatGPT to update only assumptions and review fields, while preserving model formulas.</p>
+                <article class="prompt-block featured-prompt">
+                  <div class="prompt-header">
+                    <div>
+                      <span class="step-chip">Copy prompt</span>
+                      <h3>Validate + Refresh Assumptions</h3>
+                    </div>
+                    <button class="copy-button" data-copy-target="prompt-validate">Copy</button>
+                  </div>
+                  <pre id="prompt-validate"><code>Use ChatGPT for Sheets to validate and refresh the key assumptions in this DCF.
+
+Use the Research/Search connector, or an approved finance-data connector, to check:
+- heat or weather demand
+- FX and margin pressure
+- inflation or interest-rate pressure
+- regional trend durability
+- free cash flow conversion
+- discount rate and terminal growth
+
+Update only assumption and review fields. Do not overwrite formulas.
+
+For each update, add source link, as-of date, old value, new value, confidence, human review status, and rationale.
+
+Recalculate the model and summarize what changed using favorable / unfavorable language.</code></pre>
+                </article>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="validate-step-4" aria-label="Mark step 4 complete">
+              </label>
+              <span>Step 4</span>
+              <div>
+                <h3>Approve the judgment calls</h3>
+                <p>Check the source, confidence, and review status before treating any refreshed assumption as final.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
         <div class="workflow-summary">
           <p class="eyebrow">Workflow</p>
           <h2>Refresh assumptions with sourced research and visible judgment.</h2>
@@ -97,68 +173,6 @@
             </ul>
           </article>
         </div>
-
-        <div class="step-section">
-          <div class="section-heading compact-heading">
-            <p class="eyebrow">Step by step</p>
-            <h2>Validate the assumptions</h2>
-          </div>
-          <ol class="workflow-steps">
-            <li>
-              <span>Step 1</span>
-              <div>
-                <h3>Stay in the same workbook</h3>
-                <p>Use the model you just created. This shows how Finance can refine the current file instead of starting over.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 2</span>
-              <div>
-                <h3>Use Research/Search or an approved finance connector</h3>
-                <p>Validate external inputs like weather demand, FX, inflation, interest rates, and discount-rate context.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 3</span>
-              <div>
-                <h3>Paste the prompt below</h3>
-                <p>Ask ChatGPT to update only assumptions and review fields, while preserving model formulas.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 4</span>
-              <div>
-                <h3>Approve the judgment calls</h3>
-                <p>Check the source, confidence, and review status before treating any refreshed assumption as final.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-
-        <article class="prompt-block featured-prompt">
-          <div class="prompt-header">
-            <div>
-              <span class="step-chip">Copy prompt</span>
-              <h3>Validate + Refresh Assumptions</h3>
-            </div>
-            <button class="copy-button" data-copy-target="prompt-validate">Copy</button>
-          </div>
-          <pre id="prompt-validate"><code>Use ChatGPT for Sheets to validate and refresh the key assumptions in this DCF.
-
-Use the Research/Search connector, or an approved finance-data connector, to check:
-- heat or weather demand
-- FX and margin pressure
-- inflation or interest-rate pressure
-- regional trend durability
-- free cash flow conversion
-- discount rate and terminal growth
-
-Update only assumption and review fields. Do not overwrite formulas.
-
-For each update, add source link, as-of date, old value, new value, confidence, human review status, and rationale.
-
-Recalculate the model and summarize what changed using favorable / unfavorable language.</code></pre>
-        </article>
 
         <div class="callout">
           <strong>Human review moment:</strong>

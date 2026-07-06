@@ -1,5 +1,6 @@
 const copyButtons = document.querySelectorAll("[data-copy-target]");
 const progressItems = document.querySelectorAll("[data-progress-item]");
+const workflowProgressItems = document.querySelectorAll(".workflow-steps [data-progress-item]");
 const progressCount = document.querySelector("[data-progress-count]");
 
 async function copyText(text) {
@@ -64,12 +65,13 @@ copyButtons.forEach((button) => {
 function updateProgressCount() {
   if (!progressCount || !progressItems.length) return;
 
-  const completed = [...progressItems].filter((item) => item.checked).length;
-  progressCount.textContent = `${completed} of ${progressItems.length} completed`;
+  const countItems = workflowProgressItems.length ? workflowProgressItems : progressItems;
+  const completed = [...countItems].filter((item) => item.checked).length;
+  progressCount.textContent = `${completed} of ${countItems.length} completed`;
 }
 
 progressItems.forEach((item) => {
-  const key = `finance-lab:${item.getAttribute("data-progress-item")}`;
+  const key = `ai-demo:${item.getAttribute("data-progress-item")}`;
   item.checked = window.localStorage.getItem(key) === "true";
 
   item.addEventListener("change", () => {

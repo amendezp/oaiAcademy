@@ -66,6 +66,58 @@
           feel, which variants matter, and where review is required.
         </p>
 
+        <div class="step-section">
+          <div class="workflow-header compact-heading">
+            <div class="section-heading">
+              <p class="eyebrow">Step by step</p>
+              <h2>Run the workflow</h2>
+            </div>
+            <span data-progress-count>0 of 3 completed</span>
+          </div>
+          <ol class="workflow-steps">
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="marketing-handoff-step-1" aria-label="Mark step 1 complete">
+              </label>
+              <span>Step 1</span>
+              <div>
+                <h3>Choose the creative world</h3>
+                <p>Tell Codex which territory is moving forward, or ask it to recommend one and explain the tradeoff.</p>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="marketing-handoff-step-2" aria-label="Mark step 2 complete">
+              </label>
+              <span>Step 2</span>
+              <div>
+                <h3>Paste the prompt below</h3>
+                <p>Use this to turn the creative choice into production-ready instructions for each team.</p>
+                <article class="prompt-block featured-prompt">
+                  <div class="prompt-header">
+                    <div>
+                      <span class="step-chip">Copy prompt</span>
+                      <h3>Creative World To Handoff</h3>
+                    </div>
+                    <button class="copy-button" data-copy-target="prompt-marketing-handoff">Copy</button>
+                  </div>
+                  <pre id="prompt-marketing-handoff"><code>Turn the chosen creative world into a production handoff for design, copy, paid media, lifecycle, and creator teams. Include the asset list, format and size guidance, visual direction, copy direction, required variants, review checkpoints, claims watch-outs, and open approvals.</code></pre>
+                </article>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="marketing-handoff-step-3" aria-label="Mark step 3 complete">
+              </label>
+              <span>Step 3</span>
+              <div>
+                <h3>Check usefulness</h3>
+                <p>A handoff should answer what to make, why it matters, and what must be reviewed before launch.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
         <div class="workflow-summary">
           <p class="eyebrow">Workflow</p>
           <h2>Translate creative direction into production instructions.</h2>
@@ -97,47 +149,6 @@
             </ul>
           </article>
         </div>
-
-        <div class="step-section">
-          <div class="section-heading compact-heading">
-            <p class="eyebrow">Step by step</p>
-            <h2>Run the workflow</h2>
-          </div>
-          <ol class="workflow-steps">
-            <li>
-              <span>Step 1</span>
-              <div>
-                <h3>Choose the creative world</h3>
-                <p>Tell Codex which territory is moving forward, or ask it to recommend one and explain the tradeoff.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 2</span>
-              <div>
-                <h3>Paste the prompt below</h3>
-                <p>Use this to turn the creative choice into production-ready instructions for each team.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 3</span>
-              <div>
-                <h3>Check usefulness</h3>
-                <p>A handoff should answer what to make, why it matters, and what must be reviewed before launch.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-
-        <article class="prompt-block featured-prompt">
-          <div class="prompt-header">
-            <div>
-              <span class="step-chip">Copy prompt</span>
-              <h3>Creative World To Handoff</h3>
-            </div>
-            <button class="copy-button" data-copy-target="prompt-marketing-handoff">Copy</button>
-          </div>
-          <pre id="prompt-marketing-handoff"><code>Turn the chosen creative world into a production handoff for design, copy, paid media, lifecycle, and creator teams. Include the asset list, format and size guidance, visual direction, copy direction, required variants, review checkpoints, claims watch-outs, and open approvals.</code></pre>
-        </article>
 
         <div class="callout">
           <strong>Human review moment:</strong>

@@ -67,6 +67,80 @@
           prebuilt template.
         </p>
 
+        <div class="step-section">
+          <div class="workflow-header compact-heading">
+            <div class="section-heading">
+              <p class="eyebrow">Step by step</p>
+              <h2>Build the model live</h2>
+            </div>
+            <span data-progress-count>0 of 4 completed</span>
+          </div>
+          <ol class="workflow-steps">
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="model-step-1" aria-label="Mark step 1 complete">
+              </label>
+              <span>Step 1</span>
+              <div>
+                <h3>Open a blank workbook</h3>
+                <p>Use Google Sheets or Excel with ChatGPT enabled so the model can be created in the working file.</p>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="model-step-2" aria-label="Mark step 2 complete">
+              </label>
+              <span>Step 2</span>
+              <div>
+                <h3>Import the ChillNest files</h3>
+                <p>Bring in the historical statements, country data, and monthly regional data. Keep each source easy to inspect.</p>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="model-step-3" aria-label="Mark step 3 complete">
+              </label>
+              <span>Step 3</span>
+              <div>
+                <h3>Paste the prompt below</h3>
+                <p>Ask ChatGPT to create the model, not just explain how to build one.</p>
+                <article class="prompt-block">
+                  <div class="prompt-header">
+                    <div>
+                      <span class="step-chip">Copy prompt</span>
+                      <h3>Create the DCF Model</h3>
+                    </div>
+                    <button class="copy-button" data-copy-target="prompt-model">Copy</button>
+                  </div>
+                  <pre id="prompt-model"><code>Create a simple 5-year DCF model in this workbook using the ChillNest files.
+
+Include:
+- historical summary from the P&amp;L, balance sheet, and cash flow statement
+- editable assumptions for growth, margin, opex, working capital, capex, tax, discount rate, and terminal growth
+- base, upside, and downside forecast
+- free cash flow, terminal value, enterprise value, net debt, and implied equity value
+- sensitivity table for discount rate and terminal growth
+- country priority: Invest, Test, Hold, or Pause
+
+Use formulas for outputs. Do not hardcode forecast or valuation results.
+
+Add source, rationale, confidence, and human review status for key assumptions.</code></pre>
+                </article>
+              </div>
+            </li>
+            <li>
+              <label class="workflow-step-check">
+                <input type="checkbox" data-progress-item="model-step-4" aria-label="Mark step 4 complete">
+              </label>
+              <span>Step 4</span>
+              <div>
+                <h3>Review the workbook</h3>
+                <p>Confirm outputs use formulas, assumptions are editable, and review fields are visible before moving on.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
         <div class="workflow-summary">
           <p class="eyebrow">Workflow</p>
           <h2>Turn the finance story into an auditable DCF model.</h2>
@@ -98,66 +172,6 @@
             </ul>
           </article>
         </div>
-
-        <div class="step-section">
-          <div class="section-heading compact-heading">
-            <p class="eyebrow">Step by step</p>
-            <h2>Build the model live</h2>
-          </div>
-          <ol class="workflow-steps">
-            <li>
-              <span>Step 1</span>
-              <div>
-                <h3>Open a blank workbook</h3>
-                <p>Use Google Sheets or Excel with ChatGPT enabled so the model can be created in the working file.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 2</span>
-              <div>
-                <h3>Import the ChillNest files</h3>
-                <p>Bring in the historical statements, country data, and monthly regional data. Keep each source easy to inspect.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 3</span>
-              <div>
-                <h3>Paste the prompt below</h3>
-                <p>Ask ChatGPT to create the model, not just explain how to build one.</p>
-              </div>
-            </li>
-            <li>
-              <span>Step 4</span>
-              <div>
-                <h3>Review the workbook</h3>
-                <p>Confirm outputs use formulas, assumptions are editable, and review fields are visible before moving on.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-
-        <article class="prompt-block">
-          <div class="prompt-header">
-            <div>
-              <span class="step-chip">Copy prompt</span>
-              <h3>Create the DCF Model</h3>
-            </div>
-            <button class="copy-button" data-copy-target="prompt-model">Copy</button>
-          </div>
-          <pre id="prompt-model"><code>Create a simple 5-year DCF model in this workbook using the ChillNest files.
-
-Include:
-- historical summary from the P&amp;L, balance sheet, and cash flow statement
-- editable assumptions for growth, margin, opex, working capital, capex, tax, discount rate, and terminal growth
-- base, upside, and downside forecast
-- free cash flow, terminal value, enterprise value, net debt, and implied equity value
-- sensitivity table for discount rate and terminal growth
-- country priority: Invest, Test, Hold, or Pause
-
-Use formulas for outputs. Do not hardcode forecast or valuation results.
-
-Add source, rationale, confidence, and human review status for key assumptions.</code></pre>
-        </article>
 
         <div class="checklist-card compact">
           <div class="checklist-header">
