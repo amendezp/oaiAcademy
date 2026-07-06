@@ -5,7 +5,7 @@ An audience-facing static lab site for Finance teams learning how to use ChatGPT
 Learners move through a guided journey:
 
 1. Setup: download files and prepare tools.
-2. Story: explain raw country performance data in ChatGPT.
+2. Story: explain raw country and regional performance data in ChatGPT.
 3. Model: create a forecast model live in ChatGPT for Excel or Google Sheets.
 4. Validate: refresh assumptions with research or approved connectors and apply Finance house style.
 5. Dashboard: create a leadership-ready dashboard and briefing.
@@ -22,8 +22,9 @@ Learners move through a guided journey:
 - `review.html` - final review checklist
 - `styles.css` - visual styling
 - `script.js` - copy-prompt behavior
-- `demo-files/chillnest_country_performance.csv` - synthetic finance data
-- `demo-files/chillnest_operating_notes.md` - synthetic operating context
+- `demo-files/chillnest_country_performance.csv` - synthetic country-level finance data
+- `demo-files/chillnest_monthly_region_performance.csv` - synthetic monthly regional trend and free cash flow data
+- `demo-files/chillnest_operating_notes.txt` - synthetic operating context
 
 ## Deploy To Vercel
 

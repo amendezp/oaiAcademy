@@ -44,8 +44,8 @@
         <div class="lesson-kicker">Step 2 of 5</div>
         <h1>Create a country-level forecast model</h1>
         <p class="lesson-lead">
-          Move into ChatGPT for Sheets or Excel. Use the raw performance data to create the model
-          live instead of starting from a prebuilt template.
+          Move into ChatGPT for Sheets or Excel. Use the country data and monthly regional data
+          to create the model live instead of starting from a prebuilt template.
         </p>
 
         <div class="learning-panel">
@@ -59,8 +59,8 @@
           <article>
             <h2>Model the economics</h2>
             <p>
-              Do not stop at revenue. Forecast contribution profit after marketing, returns,
-              logistics, stockouts, and margin adjustments.
+              Do not stop at revenue. Forecast contribution profit and add a lightweight free
+              cash flow view using inventory investment, working capital, and capex.
             </p>
           </article>
         </div>
@@ -73,7 +73,7 @@
             </div>
             <button class="copy-button" data-copy-target="prompt-model">Copy</button>
           </div>
-          <pre id="prompt-model"><code>Create a country-level forecast model in this workbook using the ChillNest country performance data.
+          <pre id="prompt-model"><code>Create a country-level forecast model in this workbook using the ChillNest country performance data and monthly regional performance data.
 
 Workflow: Forecast Model Creation.
 
@@ -81,11 +81,14 @@ Build the model from scratch. Include:
 - base, upside, and downside revenue forecast
 - forecast units
 - contribution profit forecast
+- regional monthly trend and seasonality check
+- lightweight free cash flow forecast using operating cash flow, inventory investment, working capital change, and capex where available
 - marketing efficiency impact
 - return-rate impact
 - logistics cost impact
 - stockout risk adjustment
 - investment priority by country: Invest, Test, Hold, or Pause
+- optional DCF-ready output: forecast free cash flow by region and total company
 
 Create editable assumption inputs for each country:
 - weather_demand_lift
@@ -94,10 +97,14 @@ Create editable assumption inputs for each country:
 - logistics_cost_adjustment
 - FX_margin_adjustment
 - inflation_or_interest_rate_cost_adjustment
+- regional_trend_adjustment
+- free_cash_flow_conversion_adjustment
 
 Use formulas for calculated outputs. Make the model easy for Finance to audit.
 
-Add a brief model documentation section that explains each formula in plain English.</code></pre>
+Add a brief model documentation section that explains each formula in plain English.
+
+Clearly label which outputs are country-level, regional, and total company.</code></pre>
         </article>
 
         <div class="checklist-card compact">

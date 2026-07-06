@@ -79,12 +79,14 @@ Use the forecast model you just created. Do not create a new file.
 
 Use the Research/Search connector or any approved finance-data connector available in this environment.
 
-Step 1: Identify the key assumption inputs by country:
+Step 1: Identify the key assumption inputs by country and region:
 - weather_demand_lift
 - FX_margin_adjustment
 - inflation_or_interest_rate_cost_adjustment
 - return_rate_adjustment
 - logistics_cost_adjustment
+- regional_trend_adjustment
+- free_cash_flow_conversion_adjustment
 - demand_confidence
 
 Step 2: Validate those assumptions with trusted external sources:
@@ -92,6 +94,8 @@ Step 2: Validate those assumptions with trusted external sources:
 - FX or currency movement: FRED, ECB, a central bank, or reliable market-data source
 - inflation or interest-rate pressure: World Bank, OECD, FRED, or country central banks
 - ecommerce demand signal: Google Trends or another available demand signal
+- region-level trend: compare against the monthly regional performance file before treating June as durable
+- free cash flow conversion: validate whether inventory investment and working-capital pressure are timing issues or recurring cash conversion risks
 
 Step 3: Update only assumption input cells and validation fields.
 Do not overwrite formulas, calculated outputs, or formatting unless needed.
@@ -106,6 +110,7 @@ Step 4: For every updated assumption, add:
 
 Step 5: Recalculate the forecast outputs and explain what changed:
 - which countries moved up or down in investment priority
+- which regions changed in forecast or DCF-readiness
 - which assumptions had the largest impact
 - which assumptions still require Finance review before the dashboard is shared
 

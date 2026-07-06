@@ -51,7 +51,7 @@
         <div class="checklist-card">
           <div class="checklist-header">
             <h2>Prerequisites</h2>
-            <span data-progress-count>0 of 6 completed</span>
+            <span data-progress-count>0 of 7 completed</span>
           </div>
           <label class="check-row">
             <input type="checkbox" data-progress-item="setup-chatgpt">
@@ -66,12 +66,16 @@
             <span>Download the country performance CSV.</span>
           </label>
           <label class="check-row">
+            <input type="checkbox" data-progress-item="setup-region">
+            <span>Download the monthly regional performance CSV.</span>
+          </label>
+          <label class="check-row">
             <input type="checkbox" data-progress-item="setup-notes">
-            <span>Download the operating notes.</span>
+            <span>Download the operating notes TXT file.</span>
           </label>
           <label class="check-row">
             <input type="checkbox" data-progress-item="setup-workbook">
-            <span>Open the CSV in a new workbook.</span>
+            <span>Open or import both CSV files into a new workbook.</span>
           </label>
           <label class="check-row">
             <input type="checkbox" data-progress-item="setup-research">
@@ -85,10 +89,15 @@
             <strong>Country performance data</strong>
             <small>Use this in ChatGPT and import it into Sheets or Excel.</small>
           </a>
-          <a class="download-card" href="./demo-files/chillnest_operating_notes.md" download>
-            <span>MD</span>
+          <a class="download-card" href="./demo-files/chillnest_monthly_region_performance.csv" download>
+            <span>CSV</span>
+            <strong>Monthly regional performance</strong>
+            <small>Use this for seasonality, forecast trend, and free cash flow context.</small>
+          </a>
+          <a class="download-card" href="./demo-files/chillnest_operating_notes.txt" download>
+            <span>TXT</span>
             <strong>Operating notes</strong>
-            <small>Upload with the CSV so ChatGPT has business context.</small>
+            <small>Upload with the CSVs so ChatGPT has business context.</small>
           </a>
         </div>
 
