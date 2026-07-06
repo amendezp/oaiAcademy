@@ -1,25 +1,29 @@
 ChillNest Company Profile
 
-ChillNest is a synthetic direct-to-consumer commerce company used for the ChatGPT for Finance Lab. The company sells cooling blankets online across North America, Latin America, Europe, and Asia Pacific. Its core product is a breathable, moisture-wicking blanket positioned for warm-weather sleep, heat-wave comfort, and premium home wellness.
+ChillNest is a direct-to-consumer sleep comfort company focused on helping people sleep cooler during warm nights, seasonal heat waves, and overheated indoor environments. The company sells cooling blankets and related bedding products online across North America, Latin America, Europe, and Asia Pacific.
+
+What ChillNest Does
+
+ChillNest designs breathable, moisture-wicking bedding layers for hot sleepers, couples with different temperature preferences, wellness-focused consumers, and households with limited control over bedroom climate. The core promise is simple: make cooler sleep easier without asking customers to replace their mattress or buy a full smart-bed system.
+
+Product And Brand Positioning
+
+The flagship product is a premium cooling blanket built around light compression, breathable fibers, and heat-dispersing materials. The broader product line includes summer-weight blankets, cooling pillow covers, mattress layers, and bundled seasonal kits. ChillNest sits between basic bedding and high-end temperature-controlled sleep systems: more specialized than a standard blanket, but easier to ship, trial, and buy than a full integrated bed platform.
+
+Why The Category Matters
+
+Temperature is becoming a more visible part of the sleep conversation. Customers do not always describe the problem in financial terms; they describe waking up hot, fighting over the thermostat, running air conditioning longer, or sleeping poorly during extreme summer nights. That makes heat waves a powerful demand trigger: the customer feels the pain immediately and searches for relief quickly.
+
+Market Context
+
+Heat-driven demand can be attractive, but it is not automatically high-quality growth. Some countries convert efficiently with strong gross margin and low returns. Others require more discounting, higher freight spend, longer delivery times, or heavier inventory commitments. ChillNest therefore manages growth country by country, with finance, marketing, and operations reviewing whether demand is durable, profitable, and cash-generative.
 
 Business Model
 
-ChillNest generates revenue through online sales on its own ecommerce site and selected marketplace channels. Demand is seasonal and weather-sensitive: warmer months, heat waves, and regional climate patterns can create sharp sales spikes. The company invests heavily in paid search, social campaigns, influencer partnerships, and marketplace promotion to capture demand.
+ChillNest generates revenue through its ecommerce site, marketplace channels, influencer partnerships, paid search, and regional seasonal campaigns. The company carries inventory before peak warm-weather demand, then uses pricing, promotion, and shipping promises to balance growth with margin protection. Working capital is a recurring management focus because demand can move faster than supply during heat events.
 
-Finance Context
+Operating Considerations
 
-The lab focuses on a common Finance question: when revenue grows quickly, is that growth durable, profitable, and cash-generative? ChillNest gives learners a practical case because growth varies by country and region. Some markets show strong demand and healthy contribution profit, while others require caution because returns, logistics costs, FX pressure, inventory investment, or weak marketing efficiency can reduce free cash flow.
+The key management question is not simply whether more customers are buying cooling blankets. The better question is whether the next dollar of growth creates durable enterprise value. ChillNest needs to understand where demand is recurring versus heat-wave-driven, where contribution margin is strong enough to support more marketing spend, and where logistics, returns, FX, or inventory risk could weaken free cash flow.
 
-Why This Case Works For A DCF
-
-A DCF needs more than a single month of sales data. It needs a view of historical revenue, margin, operating expense, working capital, capex, and free cash flow. ChillNest includes country performance data, monthly regional performance data, operating context, and simple historical financial statements so learners can connect operating drivers to forecast assumptions and cash flow.
-
-Key Learning Themes
-
-- Revenue growth is not the same as profitable growth.
-- Country performance should be reviewed alongside regional trends.
-- Inventory investment and working capital can turn strong demand into weaker free cash flow.
-- DCF assumptions should be source-backed, clearly labeled, and reviewed by a human.
-- Leadership dashboards should distinguish source-backed metrics from placeholders.
-
-The company, data, and operating notes are synthetic and intended only for training and demonstration.
+This company, data, and context are synthetic and intended for training and demonstration.
