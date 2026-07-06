@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Setup | ChatGPT for Finance Lab</title>
-    <meta name="description" content="Prepare for the ChatGPT for Finance guided lab.">
+    <title>Finance Requirements | AI Enablement Journeys</title>
+    <meta name="description" content="Download the files and open the tools required for the ChatGPT for Finance journey.">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="./index.html" aria-label="ChatGPT for Finance Lab home">
+      <a class="brand" href="./index.html" aria-label="AI Enablement Journeys home">
         <span class="brand-mark" aria-hidden="true">AI</span>
         <span>
-          <strong>ChatGPT for Finance Lab</strong>
-          <small>Guided journey</small>
+          <strong>ChatGPT for Finance</strong>
+          <small>Requirements</small>
         </span>
       </a>
-      <nav class="top-nav" aria-label="Journey navigation">
+      <nav class="top-nav" aria-label="Finance journey navigation">
         <a href="./index.html">Home</a>
-        <a class="active" href="./setup.html">Setup</a>
+        <a class="active" href="./setup.html">Requirements</a>
         <a href="./story.html">Story</a>
         <a href="./model.html">Model</a>
         <a href="./validate.html">Validate</a>
@@ -29,9 +29,9 @@
 
     <main class="lesson-shell">
       <aside class="lesson-sidebar">
-        <p class="eyebrow">Journey</p>
+        <p class="eyebrow">Finance journey</p>
         <ol class="side-steps">
-          <li class="current">Setup</li>
+          <li class="current">Requirements</li>
           <li>Find the story</li>
           <li>Create the model</li>
           <li>Validate assumptions</li>
@@ -41,98 +41,121 @@
       </aside>
 
       <section class="lesson-main">
-        <div class="lesson-kicker">Step 0 of 5</div>
-        <h1>Get ready for the lab</h1>
+        <div class="lesson-kicker">Before step 1</div>
+        <h1>Prepare the Finance journey</h1>
         <p class="lesson-lead">
-          Prepare your files and tools before you begin. This lets you focus on the Finance
-          workflow instead of setup details.
+          Open the tools and download the ChillNest files before starting. Check each item when it
+          is ready so the live workflow can move quickly.
         </p>
 
-        <div class="checklist-card">
+        <div class="checklist-card requirements-card">
           <div class="checklist-header">
-            <h2>Prerequisites</h2>
-            <span data-progress-count>0 of 8 completed</span>
+            <h2>Requirements</h2>
+            <span data-progress-count>0 of 10 completed</span>
           </div>
-          <label class="check-row">
-            <input type="checkbox" data-progress-item="setup-chatgpt">
-            <span>Open ChatGPT and start a new chat for the lab.</span>
-          </label>
-          <label class="check-row">
-            <input type="checkbox" data-progress-item="setup-sheets">
-            <span>Open Google Sheets or Excel with ChatGPT available.</span>
-          </label>
-          <label class="check-row">
-            <input type="checkbox" data-progress-item="setup-profile">
-            <span>Download the ChillNest company profile.</span>
-          </label>
-          <label class="check-row">
-            <input type="checkbox" data-progress-item="setup-performance">
-            <span>Download the country and regional performance CSV files.</span>
-          </label>
-          <label class="check-row">
-            <input type="checkbox" data-progress-item="setup-statements">
-            <span>Download the historical P&amp;L, balance sheet, and cash flow CSV files.</span>
-          </label>
-          <label class="check-row">
-            <input type="checkbox" data-progress-item="setup-notes">
-            <span>Download the operating notes TXT file.</span>
-          </label>
-          <label class="check-row">
-            <input type="checkbox" data-progress-item="setup-workbook">
-            <span>Open or import the CSV files into a new workbook.</span>
-          </label>
-          <label class="check-row">
-            <input type="checkbox" data-progress-item="setup-research">
-            <span>Confirm you can use research/search or approved finance-data connectors.</span>
-          </label>
+
+          <div class="requirement-list">
+            <div class="requirement-row">
+              <input id="setup-chatgpt" type="checkbox" data-progress-item="setup-chatgpt">
+              <label class="requirement-main" for="setup-chatgpt">
+                <strong>ChatGPT workspace</strong>
+                <small>Use this for the story prompt and file-based analysis.</small>
+              </label>
+              <a class="requirement-link" href="https://chatgpt.com/" target="_blank" rel="noreferrer">Open ChatGPT</a>
+            </div>
+
+            <div class="requirement-row">
+              <input id="setup-sheets" type="checkbox" data-progress-item="setup-sheets">
+              <label class="requirement-main" for="setup-sheets">
+                <strong>Google Sheets or Excel</strong>
+                <small>Use this for the DCF model, validation refresh, and dashboard.</small>
+              </label>
+              <a class="requirement-link" href="https://sheets.new/" target="_blank" rel="noreferrer">Open Sheet</a>
+            </div>
+
+            <div class="requirement-row">
+              <input id="setup-profile-pdf" type="checkbox" data-progress-item="setup-profile-pdf">
+              <label class="requirement-main" for="setup-profile-pdf">
+                <strong>ChillNest company profile</strong>
+                <small>One-page company overview for business context.</small>
+              </label>
+              <a class="requirement-link" href="./demo-files/chillnest_company_profile.pdf" download>Download PDF</a>
+            </div>
+
+            <div class="requirement-row">
+              <input id="setup-profile-txt" type="checkbox" data-progress-item="setup-profile-txt">
+              <label class="requirement-main" for="setup-profile-txt">
+                <strong>Company profile text</strong>
+                <small>Plain-text version for uploading into ChatGPT.</small>
+              </label>
+              <a class="requirement-link" href="./demo-files/chillnest_company_profile.txt" download>Download TXT</a>
+            </div>
+
+            <div class="requirement-row">
+              <input id="setup-country" type="checkbox" data-progress-item="setup-country">
+              <label class="requirement-main" for="setup-country">
+                <strong>Country performance data</strong>
+                <small>Revenue, plan, margin, ROAS, returns, logistics, and stockouts.</small>
+              </label>
+              <a class="requirement-link" href="./demo-files/chillnest_country_performance.csv" download>Download CSV</a>
+            </div>
+
+            <div class="requirement-row">
+              <input id="setup-region" type="checkbox" data-progress-item="setup-region">
+              <label class="requirement-main" for="setup-region">
+                <strong>Monthly regional performance</strong>
+                <small>Trend, seasonality, working capital, and free cash flow context.</small>
+              </label>
+              <a class="requirement-link" href="./demo-files/chillnest_monthly_region_performance.csv" download>Download CSV</a>
+            </div>
+
+            <div class="requirement-row">
+              <input id="setup-notes" type="checkbox" data-progress-item="setup-notes">
+              <label class="requirement-main" for="setup-notes">
+                <strong>Operating notes</strong>
+                <small>Context from Finance, Marketing, Supply Chain, and Support.</small>
+              </label>
+              <a class="requirement-link" href="./demo-files/chillnest_operating_notes.txt" download>Download TXT</a>
+            </div>
+
+            <div class="requirement-row">
+              <input id="setup-pl" type="checkbox" data-progress-item="setup-pl">
+              <label class="requirement-main" for="setup-pl">
+                <strong>Historical P&amp;L</strong>
+                <small>Revenue, gross margin, operating expense, EBITDA, EBIT, and net income.</small>
+              </label>
+              <a class="requirement-link" href="./demo-files/chillnest_historical_pl.csv" download>Download CSV</a>
+            </div>
+
+            <div class="requirement-row">
+              <input id="setup-bs" type="checkbox" data-progress-item="setup-bs">
+              <label class="requirement-main" for="setup-bs">
+                <strong>Historical balance sheet</strong>
+                <small>Cash, inventory, working capital, debt, equity, and assets.</small>
+              </label>
+              <a class="requirement-link" href="./demo-files/chillnest_historical_balance_sheet.csv" download>Download CSV</a>
+            </div>
+
+            <div class="requirement-row">
+              <input id="setup-cf" type="checkbox" data-progress-item="setup-cf">
+              <label class="requirement-main" for="setup-cf">
+                <strong>Historical cash flow</strong>
+                <small>Operating cash flow, capex, free cash flow, debt activity, and cash.</small>
+              </label>
+              <a class="requirement-link" href="./demo-files/chillnest_historical_cash_flow.csv" download>Download CSV</a>
+            </div>
+          </div>
         </div>
 
-        <div class="resource-row">
-          <a class="download-card" href="./demo-files/chillnest_company_profile.pdf" download>
-            <span>PDF</span>
-            <strong>Company profile</strong>
-            <small>One-page overview for business context.</small>
-          </a>
-          <a class="download-card" href="./demo-files/chillnest_company_profile.txt" download>
-            <span>TXT</span>
-            <strong>Company profile text</strong>
-            <small>Upload this to ChatGPT with the operating notes.</small>
-          </a>
-          <a class="download-card" href="./demo-files/chillnest_country_performance.csv" download>
-            <span>CSV</span>
-            <strong>Country performance data</strong>
-            <small>Use this in ChatGPT and import it into Sheets or Excel.</small>
-          </a>
-          <a class="download-card" href="./demo-files/chillnest_monthly_region_performance.csv" download>
-            <span>CSV</span>
-            <strong>Monthly regional performance</strong>
-            <small>Use this for seasonality, forecast trend, and free cash flow context.</small>
-          </a>
-          <a class="download-card" href="./demo-files/chillnest_operating_notes.txt" download>
-            <span>TXT</span>
-            <strong>Operating notes</strong>
-            <small>Upload with the CSVs so ChatGPT has business context.</small>
-          </a>
-          <a class="download-card" href="./demo-files/chillnest_historical_pl.csv" download>
-            <span>CSV</span>
-            <strong>Historical P&amp;L</strong>
-            <small>Use for revenue, margins, operating expense, and earnings history.</small>
-          </a>
-          <a class="download-card" href="./demo-files/chillnest_historical_balance_sheet.csv" download>
-            <span>CSV</span>
-            <strong>Historical balance sheet</strong>
-            <small>Use for cash, working capital, inventory, debt, and equity.</small>
-          </a>
-          <a class="download-card" href="./demo-files/chillnest_historical_cash_flow.csv" download>
-            <span>CSV</span>
-            <strong>Historical cash flow</strong>
-            <small>Use for operating cash flow, capex, and free cash flow history.</small>
-          </a>
+        <div class="callout">
+          <strong>Tip:</strong>
+          Import the CSV files into one workbook before starting the model step. Keep the PDF or TXT
+          profile available for the first ChatGPT prompt.
         </div>
 
         <div class="lesson-actions">
-          <a class="button secondary" href="./index.html">Back home</a>
-          <a class="button primary" href="./story.html">Next: find the story</a>
+          <a class="button secondary" href="./index.html">Back to journeys</a>
+          <a class="button primary" href="./story.html">Start the Finance journey</a>
         </div>
       </section>
     </main>

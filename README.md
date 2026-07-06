@@ -4,7 +4,7 @@ An audience-facing static lab site for Finance teams learning how to use ChatGPT
 
 Learners move through a guided journey:
 
-1. Setup: download files and prepare tools.
+1. Requirements: download files and prepare tools.
 2. Story: explain raw country and regional performance data in ChatGPT.
 3. Model: create a DCF model live in ChatGPT for Excel or Google Sheets.
 4. Validate: refresh assumptions with research or approved connectors.
@@ -13,13 +13,14 @@ Learners move through a guided journey:
 
 ## Files
 
-- `index.html` - learner-facing lab site
-- `setup.html` - setup checklist
+- `index.html` - two-journey landing page
+- `setup.html` - Finance requirements checklist
 - `story.html` - raw-data story workflow
 - `model.html` - model creation workflow
 - `validate.html` - assumption validation workflow
 - `dashboard.html` - dashboard creation workflow
 - `review.html` - final review checklist
+- `marketing.html` - Codex for Marketing journey preview
 - `styles.css` - visual styling
 - `script.js` - copy-prompt behavior
 - `demo-files/chillnest_country_performance.csv` - synthetic country-level finance data
