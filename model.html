@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create the Model | ChatGPT for Finance Lab</title>
+    <meta name="description" content="Use ChatGPT for Sheets to create a finance forecast model.">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="ChatGPT for Finance Lab home">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span>
+          <strong>ChatGPT for Finance Lab</strong>
+          <small>Guided journey</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="Journey navigation">
+        <a href="./index.html">Home</a>
+        <a href="./setup.html">Setup</a>
+        <a href="./story.html">Story</a>
+        <a class="active" href="./model.html">Model</a>
+        <a href="./validate.html">Validate</a>
+        <a href="./dashboard.html">Dashboard</a>
+        <a href="./review.html">Review</a>
+      </nav>
+    </header>
+
+    <main class="lesson-shell">
+      <aside class="lesson-sidebar">
+        <p class="eyebrow">Journey</p>
+        <ol class="side-steps">
+          <li>Setup</li>
+          <li>Find the story</li>
+          <li class="current">Create the model</li>
+          <li>Validate assumptions</li>
+          <li>Create dashboard</li>
+          <li>Review</li>
+        </ol>
+      </aside>
+
+      <section class="lesson-main">
+        <div class="lesson-kicker">Step 2 of 5</div>
+        <h1>Create a country-level forecast model</h1>
+        <p class="lesson-lead">
+          Move into ChatGPT for Sheets or Excel. Use the raw performance data to create the model
+          live instead of starting from a prebuilt template.
+        </p>
+
+        <div class="learning-panel">
+          <article>
+            <h2>Use the spreadsheet here</h2>
+            <p>
+              This is where ChatGPT for Sheets is most useful: formulas, model structure,
+              scenarios, editable assumptions, and documentation.
+            </p>
+          </article>
+          <article>
+            <h2>Model the economics</h2>
+            <p>
+              Do not stop at revenue. Forecast contribution profit after marketing, returns,
+              logistics, stockouts, and margin adjustments.
+            </p>
+          </article>
+        </div>
+
+        <article class="prompt-block">
+          <div class="prompt-header">
+            <div>
+              <span class="step-chip">Copy prompt</span>
+              <h3>Forecast Model Creation</h3>
+            </div>
+            <button class="copy-button" data-copy-target="prompt-model">Copy</button>
+          </div>
+          <pre id="prompt-model"><code>Create a country-level forecast model in this workbook using the ChillNest country performance data.
+
+Workflow: Forecast Model Creation.
+
+Build the model from scratch. Include:
+- base, upside, and downside revenue forecast
+- forecast units
+- contribution profit forecast
+- marketing efficiency impact
+- return-rate impact
+- logistics cost impact
+- stockout risk adjustment
+- investment priority by country: Invest, Test, Hold, or Pause
+
+Create editable assumption inputs for each country:
+- weather_demand_lift
+- marketing_efficiency_adjustment
+- return_rate_adjustment
+- logistics_cost_adjustment
+- FX_margin_adjustment
+- inflation_or_interest_rate_cost_adjustment
+
+Use formulas for calculated outputs. Make the model easy for Finance to audit.
+
+Add a brief model documentation section that explains each formula in plain English.</code></pre>
+        </article>
+
+        <div class="checklist-card compact">
+          <div class="checklist-header">
+            <h2>Before moving on</h2>
+          </div>
+          <label class="check-row">
+            <input type="checkbox" data-progress-item="model-formulas">
+            <span>The workbook has formulas, not only pasted values.</span>
+          </label>
+          <label class="check-row">
+            <input type="checkbox" data-progress-item="model-assumptions">
+            <span>Assumption inputs are editable and separated from outputs.</span>
+          </label>
+          <label class="check-row">
+            <input type="checkbox" data-progress-item="model-docs">
+            <span>The model has a plain-English documentation section.</span>
+          </label>
+        </div>
+
+        <div class="lesson-actions">
+          <a class="button secondary" href="./story.html">Back: story</a>
+          <a class="button primary" href="./validate.html">Next: validate assumptions</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

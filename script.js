@@ -1,4 +1,6 @@
 const copyButtons = document.querySelectorAll("[data-copy-target]");
+const progressItems = document.querySelectorAll("[data-progress-item]");
+const progressCount = document.querySelector("[data-progress-count]");
 
 copyButtons.forEach((button) => {
   button.addEventListener("click", async () => {
@@ -24,3 +26,22 @@ copyButtons.forEach((button) => {
     }
   });
 });
+
+function updateProgressCount() {
+  if (!progressCount || !progressItems.length) return;
+
+  const completed = [...progressItems].filter((item) => item.checked).length;
+  progressCount.textContent = `${completed} of ${progressItems.length} completed`;
+}
+
+progressItems.forEach((item) => {
+  const key = `finance-lab:${item.getAttribute("data-progress-item")}`;
+  item.checked = window.localStorage.getItem(key) === "true";
+
+  item.addEventListener("change", () => {
+    window.localStorage.setItem(key, item.checked ? "true" : "false");
+    updateProgressCount();
+  });
+});
+
+updateProgressCount();

@@ -2,17 +2,24 @@
 
 An audience-facing static lab site for Finance teams learning how to use ChatGPT and ChatGPT for Excel or Google Sheets.
 
-Learners use the site to:
+Learners move through a guided journey:
 
-1. Tell the story of raw country performance data in ChatGPT.
-2. Create a forecast model live in ChatGPT for Excel or Google Sheets.
-3. Validate assumptions and refresh the same model with research or approved connectors.
-4. Apply Finance house style and human review rules.
-5. Create a leadership-ready dashboard and briefing.
+1. Setup: download files and prepare tools.
+2. Story: explain raw country performance data in ChatGPT.
+3. Model: create a forecast model live in ChatGPT for Excel or Google Sheets.
+4. Validate: refresh assumptions with research or approved connectors and apply Finance house style.
+5. Dashboard: create a leadership-ready dashboard and briefing.
+6. Review: check accuracy, assumptions, and human judgment before sharing.
 
 ## Files
 
 - `index.html` - learner-facing lab site
+- `setup.html` - setup checklist
+- `story.html` - raw-data story workflow
+- `model.html` - model creation workflow
+- `validate.html` - assumption validation and Finance house style workflow
+- `dashboard.html` - dashboard creation workflow
+- `review.html` - final review checklist
 - `styles.css` - visual styling
 - `script.js` - copy-prompt behavior
 - `demo-files/chillnest_country_performance.csv` - synthetic finance data

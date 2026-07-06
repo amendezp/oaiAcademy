@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find the Story | ChatGPT for Finance Lab</title>
+    <meta name="description" content="Use ChatGPT to explain raw finance performance data.">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="ChatGPT for Finance Lab home">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span>
+          <strong>ChatGPT for Finance Lab</strong>
+          <small>Guided journey</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="Journey navigation">
+        <a href="./index.html">Home</a>
+        <a href="./setup.html">Setup</a>
+        <a class="active" href="./story.html">Story</a>
+        <a href="./model.html">Model</a>
+        <a href="./validate.html">Validate</a>
+        <a href="./dashboard.html">Dashboard</a>
+        <a href="./review.html">Review</a>
+      </nav>
+    </header>
+
+    <main class="lesson-shell">
+      <aside class="lesson-sidebar">
+        <p class="eyebrow">Journey</p>
+        <ol class="side-steps">
+          <li>Setup</li>
+          <li class="current">Find the story</li>
+          <li>Create the model</li>
+          <li>Validate assumptions</li>
+          <li>Create dashboard</li>
+          <li>Review</li>
+        </ol>
+      </aside>
+
+      <section class="lesson-main">
+        <div class="lesson-kicker">Step 1 of 5</div>
+        <h1>Find the finance story in the raw data</h1>
+        <p class="lesson-lead">
+          Start in ChatGPT. Upload the performance CSV and operating notes, then ask for a story
+          that separates growth, profitability, risk, and open questions.
+        </p>
+
+        <div class="learning-panel">
+          <article>
+            <h2>Why this matters</h2>
+            <p>
+              Finance teams are rarely asked to recite rows. They are asked what happened, why it
+              matters, and what leaders should inspect next.
+            </p>
+          </article>
+          <article>
+            <h2>What good looks like</h2>
+            <p>
+              The answer should mention country-level drivers, distinguish profitable growth from
+              revenue growth, and flag unsupported assumptions.
+            </p>
+          </article>
+        </div>
+
+        <article class="prompt-block">
+          <div class="prompt-header">
+            <div>
+              <span class="step-chip">Copy prompt</span>
+              <h3>Raw Data Story</h3>
+            </div>
+            <button class="copy-button" data-copy-target="prompt-story">Copy</button>
+          </div>
+          <pre id="prompt-story"><code>Act as a finance analyst.
+
+Use the uploaded ChillNest country performance data and operating notes.
+
+Tell me the story behind the raw data. Do not just summarize rows.
+
+Separate:
+- revenue growth
+- profitable growth
+- operational risk
+- country-level drivers
+- items that require human verification before leadership sees the analysis
+
+For each material claim, point to the source file or field that supports it.
+
+End with 5 finance questions this analysis should answer in the model.</code></pre>
+        </article>
+
+        <div class="callout">
+          <strong>Human review moment:</strong>
+          Ask yourself whether ChatGPT cited data fields for the claims it made. If not, ask it to
+          revise with source references before moving on.
+        </div>
+
+        <div class="lesson-actions">
+          <a class="button secondary" href="./setup.html">Back: setup</a>
+          <a class="button primary" href="./model.html">Next: create the model</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

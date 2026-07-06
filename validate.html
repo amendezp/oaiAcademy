@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Validate Assumptions | ChatGPT for Finance Lab</title>
+    <meta name="description" content="Validate assumptions and apply Finance review rules.">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="ChatGPT for Finance Lab home">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span>
+          <strong>ChatGPT for Finance Lab</strong>
+          <small>Guided journey</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="Journey navigation">
+        <a href="./index.html">Home</a>
+        <a href="./setup.html">Setup</a>
+        <a href="./story.html">Story</a>
+        <a href="./model.html">Model</a>
+        <a class="active" href="./validate.html">Validate</a>
+        <a href="./dashboard.html">Dashboard</a>
+        <a href="./review.html">Review</a>
+      </nav>
+    </header>
+
+    <main class="lesson-shell">
+      <aside class="lesson-sidebar">
+        <p class="eyebrow">Journey</p>
+        <ol class="side-steps">
+          <li>Setup</li>
+          <li>Find the story</li>
+          <li>Create the model</li>
+          <li class="current">Validate assumptions</li>
+          <li>Create dashboard</li>
+          <li>Review</li>
+        </ol>
+      </aside>
+
+      <section class="lesson-main">
+        <div class="lesson-kicker">Step 3 of 5</div>
+        <h1>Validate assumptions and apply Finance judgment</h1>
+        <p class="lesson-lead">
+          Keep working in the same workbook. First, validate the assumptions with sources. Then,
+          refine the model using the language and thresholds Finance teams use every day.
+        </p>
+
+        <div class="learning-panel">
+          <article>
+            <h2>Use connectors carefully</h2>
+            <p>
+              Research can help validate weather, FX, inflation, or interest-rate assumptions,
+              but externally sourced values still need human review.
+            </p>
+          </article>
+          <article>
+            <h2>Add team judgment</h2>
+            <p>
+              Finance house style turns a model into a reviewable work product: materiality,
+              favorable or unfavorable language, and clear decisions needed.
+            </p>
+          </article>
+        </div>
+
+        <article class="prompt-block featured-prompt">
+          <div class="prompt-header">
+            <div>
+              <span class="step-chip">Prompt 1</span>
+              <h3>Assumption Validation + Model Refresh</h3>
+            </div>
+            <button class="copy-button" data-copy-target="prompt-validate">Copy</button>
+          </div>
+          <pre id="prompt-validate"><code>Run an Assumption Validation + Model Refresh workflow on this workbook.
+
+Use the forecast model you just created. Do not create a new file.
+
+Use the Research/Search connector or any approved finance-data connector available in this environment.
+
+Step 1: Identify the key assumption inputs by country:
+- weather_demand_lift
+- FX_margin_adjustment
+- inflation_or_interest_rate_cost_adjustment
+- return_rate_adjustment
+- logistics_cost_adjustment
+- demand_confidence
+
+Step 2: Validate those assumptions with trusted external sources:
+- weather or heatwave signal: NASA POWER, Open-Meteo, NOAA, or another weather source
+- FX or currency movement: FRED, ECB, a central bank, or reliable market-data source
+- inflation or interest-rate pressure: World Bank, OECD, FRED, or country central banks
+- ecommerce demand signal: Google Trends or another available demand signal
+
+Step 3: Update only assumption input cells and validation fields.
+Do not overwrite formulas, calculated outputs, or formatting unless needed.
+
+Step 4: For every updated assumption, add:
+- source name
+- source link
+- as-of date
+- confidence level: High, Medium, or Low
+- human review status: Approved, Needs Review, or Do Not Use
+- short rationale
+
+Step 5: Recalculate the forecast outputs and explain what changed:
+- which countries moved up or down in investment priority
+- which assumptions had the largest impact
+- which assumptions still require Finance review before the dashboard is shared
+
+Do not present externally sourced assumptions as final unless the human review status is Approved.</code></pre>
+        </article>
+
+        <article class="prompt-block">
+          <div class="prompt-header">
+            <div>
+              <span class="step-chip">Prompt 2</span>
+              <h3>Finance House Style Refinement</h3>
+            </div>
+            <button class="copy-button" data-copy-target="prompt-style">Copy</button>
+          </div>
+          <pre id="prompt-style"><code>Refine the refreshed forecast model using Finance house style and review rules.
+
+Workflow: Finance House Style Refinement.
+
+Use the model and assumptions already in this workbook. Do not create a new file.
+
+Apply these Finance interpretation rules:
+- Show country-level revenue, marketing spend, and contribution profit in $K, rounded to the nearest $1K.
+- Show portfolio totals in $M, rounded to one decimal place.
+- Show margin, return rate, conversion rate, and ROAS changes clearly. Use percentage points for rate changes when comparing to plan or prior month.
+- Use favorable / unfavorable language instead of positive / negative.
+- Separate timing issues from recurring performance issues.
+- Distinguish revenue growth from profitable growth.
+- Treat recurring return-rate issues, logistics-cost pressure, weak ROAS, FX margin pressure, and stockouts as higher-priority risks than one-time demand spikes.
+- Classify each country's variance driver as demand, execution, timing, mix, pricing, returns, logistics, FX, or inventory availability.
+- Distinguish "what happened" from "what leadership needs to decide."
+- Keep commentary direct, concise, and leadership-ready.
+- Use source citations for every material number, claim, or externally validated assumption.
+
+Add or update these fields in the model:
+- finance_driver_classification
+- timing_or_recurring
+- favorable_or_unfavorable
+- leadership_decision_needed
+- human_review_required
+- finance_commentary
+
+Use this materiality threshold:
+- Call out revenue variances greater than $25K or 5%.
+- Call out contribution profit variances greater than $10K or 5%.
+- Call out any assumption marked Needs Review or Do Not Use, even if the dollar impact is small.
+
+Then summarize the refinements:
+- top 3 favorable drivers
+- top 3 unfavorable drivers
+- countries that should be invested in, tested, held, or paused
+- items Finance must review before the dashboard is shared</code></pre>
+        </article>
+
+        <div class="callout">
+          <strong>Human review moment:</strong>
+          A source link is not the same as approval. Use the confidence and review-status fields to
+          show where Finance still needs to make a judgment call.
+        </div>
+
+        <div class="lesson-actions">
+          <a class="button secondary" href="./model.html">Back: model</a>
+          <a class="button primary" href="./dashboard.html">Next: create the dashboard</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

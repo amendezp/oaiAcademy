@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Dashboard | ChatGPT for Finance Lab</title>
+    <meta name="description" content="Create a leadership-ready finance dashboard with ChatGPT for Sheets.">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="ChatGPT for Finance Lab home">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span>
+          <strong>ChatGPT for Finance Lab</strong>
+          <small>Guided journey</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="Journey navigation">
+        <a href="./index.html">Home</a>
+        <a href="./setup.html">Setup</a>
+        <a href="./story.html">Story</a>
+        <a href="./model.html">Model</a>
+        <a href="./validate.html">Validate</a>
+        <a class="active" href="./dashboard.html">Dashboard</a>
+        <a href="./review.html">Review</a>
+      </nav>
+    </header>
+
+    <main class="lesson-shell">
+      <aside class="lesson-sidebar">
+        <p class="eyebrow">Journey</p>
+        <ol class="side-steps">
+          <li>Setup</li>
+          <li>Find the story</li>
+          <li>Create the model</li>
+          <li>Validate assumptions</li>
+          <li class="current">Create dashboard</li>
+          <li>Review</li>
+        </ol>
+      </aside>
+
+      <section class="lesson-main">
+        <div class="lesson-kicker">Step 4 of 5</div>
+        <h1>Create a leadership-ready dashboard</h1>
+        <p class="lesson-lead">
+          Turn the refreshed model into a dashboard a Finance leader can scan quickly. The goal is
+          not decoration; the goal is fast decision support with visible review status.
+        </p>
+
+        <div class="kpi-preview">
+          <article>
+            <span>Revenue</span>
+            <strong>$2.4M</strong>
+            <small>Source-backed</small>
+          </article>
+          <article>
+            <span>Gross Margin</span>
+            <strong>52%</strong>
+            <small>Calculated</small>
+          </article>
+          <article class="placeholder">
+            <span>Runway</span>
+            <strong>Placeholder</strong>
+            <small>Needs cash data</small>
+          </article>
+        </div>
+
+        <article class="prompt-block featured-prompt">
+          <div class="prompt-header">
+            <div>
+              <span class="step-chip">Copy prompt</span>
+              <h3>Leadership Dashboard Creation</h3>
+            </div>
+            <button class="copy-button" data-copy-target="prompt-dashboard">Copy</button>
+          </div>
+          <pre id="prompt-dashboard"><code>Create a leadership-ready finance dashboard from the refreshed ChillNest forecast model.
+
+Workflow: Leadership Dashboard Creation.
+
+Build a new dashboard view in this workbook using a clean executive layout with panels.
+
+Top row: create high-level KPI cards for:
+- Revenue
+- Gross Margin
+- Burn Rate
+- Runway
+- Budget vs. Actual
+
+Use actual workbook values where available.
+If Burn Rate, Runway, or any other KPI is not available in the source data, create a clearly labeled placeholder panel with a sample number and mark it "Placeholder - needs source data." Do not imply placeholder values are real.
+
+Dashboard sections:
+- KPI summary panel with current value, plan or target, variance, and favorable / unfavorable status
+- Country performance panel ranked by investment priority: Invest, Test, Hold, or Pause
+- Budget vs. Actual panel showing revenue and contribution profit variance
+- Scenario panel showing base, upside, and downside forecast
+- Assumption review panel showing items marked Needs Review or Do Not Use
+- Key takeaways panel with the top 5 leadership insights
+- Action panel with recommended next steps for Finance, Marketing, and Supply Chain
+
+Design requirements:
+- Use a clean layout with clear panels, readable labels, and consistent formatting
+- Use $K for country-level values and $M for portfolio totals
+- Use green only for favorable variance and red only for unfavorable variance
+- Keep text short enough for a Finance leader to scan in under 60 seconds
+- Make placeholder metrics visually distinct from source-backed metrics
+
+Accuracy requirements:
+- Add a small source / review note for each KPI panel
+- Show which metrics are source-backed, calculated, or placeholder
+- Do not hide assumptions that require human review
+- Do not overwrite the underlying model formulas
+
+After creating the dashboard, write a concise leadership brief:
+- headline
+- recommendation
+- what changed after assumption validation
+- which KPIs are source-backed vs. placeholders
+- risks and open questions
+- decisions needed from leadership</code></pre>
+        </article>
+
+        <div class="callout">
+          <strong>Design check:</strong>
+          The best dashboard is honest. Placeholder metrics are useful for layout, but they must
+          be visually labeled so nobody mistakes them for actual company data.
+        </div>
+
+        <div class="lesson-actions">
+          <a class="button secondary" href="./validate.html">Back: validate</a>
+          <a class="button primary" href="./review.html">Next: review and adapt</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
