@@ -2,7 +2,9 @@
 
 An audience-facing static lab site for teams learning through two paths: ChatGPT for Finance and Codex for Marketing.
 
-Learners move through a guided journey:
+Learners move through guided journeys.
+
+The ChatGPT for Finance journey follows an analysis and modeling arc:
 
 1. Requirements: download files and prepare tools.
 2. Story: explain raw country and regional performance data in ChatGPT.
@@ -10,6 +12,15 @@ Learners move through a guided journey:
 4. Validate: refresh assumptions with research or approved connectors.
 5. Dashboard: create a leadership-ready dashboard and briefing.
 6. Review: check accuracy, assumptions, and human judgment before sharing.
+
+The Codex for Marketing journey follows a campaign-production arc:
+
+1. Requirements: download Chill Nest marketing source files and prepare Codex.
+2. Brief: turn the messy campaign pile into a sharp campaign brief.
+3. Creative: turn the brief into creative worlds and moodboard direction.
+4. Handoff: turn the chosen creative world into a production handoff.
+5. Assets: draft channel assets for search, display, Meta, TikTok, email, and landing page.
+6. Landing page: create a promotion landing page preview from the campaign kit.
 
 ## Files
 
@@ -21,7 +32,13 @@ Learners move through a guided journey:
 - `validate.html` - assumption validation workflow
 - `dashboard.html` - dashboard creation workflow
 - `review.html` - final review checklist
-- `marketing.html` - Codex for Marketing journey preview
+- `marketing.html` - Codex for Marketing workflow overview
+- `marketing-setup.html` - Marketing requirements checklist and source-pack download
+- `marketing-brief.html` - marketing brief workflow
+- `marketing-creative.html` - creative direction and moodboard workflow
+- `marketing-handoff.html` - production handoff workflow
+- `marketing-assets.html` - channel assets workflow
+- `marketing-landing.html` - promotion landing page workflow
 - `styles.css` - visual styling
 - `script.js` - copy-prompt behavior
 - `demo-files/chillnest_country_performance.csv` - synthetic country-level finance data
@@ -33,6 +50,7 @@ Learners move through a guided journey:
 - `demo-files/chillnest_historical_balance_sheet.csv` - historical balance sheet
 - `demo-files/chillnest_historical_cash_flow.csv` - historical cash flow statement
 - `demo-files/chillnest_finance_source_pack.zip` - bundled ChatGPT for Finance source files
+- `demo-files/chillnest_marketing_source_pack.zip` - bundled Codex for Marketing source files
 
 ## Deploy To Vercel
 
