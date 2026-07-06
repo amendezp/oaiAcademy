@@ -63,8 +63,8 @@
           <div class="lesson-kicker">Workflow 2 of 5</div>
           <h1>Create a DCF model</h1>
           <p class="lesson-lead">
-            Move into ChatGPT for Sheets or Excel. Use the remaining modeling files to create the
-            DCF model live instead of starting from a prebuilt template.
+            Move into ChatGPT for Sheets or Excel. Use the remaining modeling files to create a
+            lightweight DCF workbook with a short assumptions tab for the next workflow.
           </p>
         </div>
 
@@ -81,10 +81,10 @@
           <article class="io-card">
             <span>Outputs</span>
             <ul>
-              <li>Five-year free cash flow forecast with editable assumptions</li>
-              <li>Base, upside, and downside scenarios</li>
-              <li>DCF valuation, net debt bridge, and sensitivity table</li>
-              <li>Source, rationale, confidence, and human review fields</li>
+              <li>Source Summary, Assumptions To Review, Simple Forecast, and DCF Output tabs</li>
+              <li>A five-year free cash flow forecast with formulas</li>
+              <li>A short list of 6-8 assumptions to validate later</li>
+              <li>Source, rationale, confidence, and review-status fields</li>
             </ul>
           </article>
         </div>
@@ -134,19 +134,17 @@
                     </div>
                     <button class="copy-button" data-copy-target="prompt-model">Copy</button>
                   </div>
-                  <pre id="prompt-model"><code>Create a simple 5-year DCF model in this workbook using the ChillNest monthly regional performance file, historical statements, and the Workflow 1 finance story.
+                  <pre id="prompt-model"><code>Create a lightweight 5-year DCF workbook for ChillNest using the monthly regional performance file, historical statements, and the Workflow 1 finance story.
 
-Include:
-- historical summary from the P&amp;L, balance sheet, and cash flow statement
-- editable assumptions for growth, margin, opex, working capital, capex, tax, discount rate, and terminal growth
-- base, upside, and downside forecast
-- free cash flow, terminal value, enterprise value, net debt, and implied equity value
-- sensitivity table for discount rate and terminal growth
-- regional growth and margin context from the monthly regional performance file
+Keep it simple and demo-ready. Create only these tabs:
+- Source Summary: short summary of the files and key historical numbers
+- Assumptions To Review: 6-8 important assumptions with current value, rationale, source, confidence, and review status
+- Simple Forecast: 5-year revenue, gross margin, operating expenses, tax, capex, working capital, and free cash flow
+- DCF Output: discount rate, terminal growth, enterprise value, net debt, and implied equity value
 
-Use formulas for outputs. Do not hardcode forecast or valuation results.
+Use formulas for the forecast and valuation outputs. Do not create sensitivity tables, scenario tabs, charts, or a dashboard yet.
 
-Add source, rationale, confidence, and human review status for key assumptions.</code></pre>
+Make the Assumptions To Review tab easy to inspect because we will validate it in the next workflow.</code></pre>
                 </article>
               </div>
             </li>
@@ -167,8 +165,8 @@ Add source, rationale, confidence, and human review status for key assumptions.<
           <p class="eyebrow">Workflow</p>
           <h2>Turn the finance story into an auditable DCF model.</h2>
           <p>
-            Use ChatGPT for Sheets or Excel to create workbook structure, formulas, editable
-            assumptions, scenarios, valuation outputs, and documentation.
+            Use ChatGPT for Sheets or Excel to create a simple workbook structure, formulas,
+            editable assumptions, valuation outputs, and a clear review path.
           </p>
         </div>
 
@@ -183,11 +181,11 @@ Add source, rationale, confidence, and human review status for key assumptions.<
           </label>
           <label class="check-row">
             <input type="checkbox" data-progress-item="model-assumptions">
-            <span>DCF assumption inputs are editable and separated from outputs.</span>
+            <span>The Assumptions To Review tab has 6-8 clear assumptions with rationale and review status.</span>
           </label>
           <label class="check-row">
             <input type="checkbox" data-progress-item="model-docs">
-            <span>The model has a plain-English documentation section.</span>
+            <span>The workbook is simple enough to explain in a live demo.</span>
           </label>
         </div>
 

@@ -114,16 +114,7 @@
                     </div>
                     <button class="copy-button" data-copy-target="prompt-tabs">Copy</button>
                   </div>
-                  <pre id="prompt-tabs"><code>Review this workbook and explain what is in each tab.
-
-For each tab, summarize:
-- purpose
-- key source data or inputs
-- calculated outputs
-- assumptions or rationale fields
-- anything incomplete, confusing, or needing human review
-
-Do not edit the workbook in this step. Keep the explanation concise and finance-readable.</code></pre>
+                  <pre id="prompt-tabs"><code>Give me a quick overview of this workbook and each tab's content.</code></pre>
                 </article>
               </div>
             </li>
@@ -134,7 +125,7 @@ Do not edit the workbook in this step. Keep the explanation concise and finance-
               <span>Step 2</span>
               <div>
                 <h3>Validate assumptions and add source links</h3>
-                <p>Ask ChatGPT to research each assumption, recommend changes when needed, and add clickable source links next to each rationale.</p>
+                <p>Ask ChatGPT to review the assumptions tab and add external source links in the right column.</p>
                 <article class="prompt-block featured-prompt">
                   <div class="prompt-header">
                     <div>
@@ -143,20 +134,7 @@ Do not edit the workbook in this step. Keep the explanation concise and finance-
                     </div>
                     <button class="copy-button" data-copy-target="prompt-validate">Copy</button>
                   </div>
-                  <pre id="prompt-validate"><code>Validate all assumptions in this workbook.
-
-Find every assumption, rationale, and review-status field across the model. For each assumption:
-- compare the current value to the source data and the Workflow 1 finance story
-- use external research where needed to validate or improve the assumption
-- recommend an updated value when the evidence supports a change
-- explain the rationale in plain language
-- add a column immediately next to each rationale called External source link
-- put an externally clickable link to the data source in that column
-- add or update source name, as-of date, confidence, and human review status
-
-Use formulas or workbook-native hyperlinks when possible so links are clickable from the sheet.
-
-Do not overwrite original assumptions without preserving the original value. Clearly mark any assumption that still needs Finance review.</code></pre>
+                  <pre id="prompt-validate"><code>Review the @assumptions in the assumptions tab. Make sure all of them make sense and add a link to an external data source supporting each claim in column M.</code></pre>
                 </article>
               </div>
             </li>
