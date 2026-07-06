@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Validate Assumptions | ChatGPT for Finance</title>
-    <meta name="description" content="Use ChatGPT to validate finance assumptions with research and human review.">
+    <meta name="description" content="Use ChatGPT for Sheets or Excel to explain workbook tabs and validate finance assumptions.">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
@@ -61,10 +61,10 @@
       <section class="lesson-main">
         <div class="lesson-hero">
           <div class="lesson-kicker">Workflow 3 of 5</div>
-          <h1>Validate assumptions with research</h1>
+          <h1>Validate assumptions in the workbook</h1>
           <p class="lesson-lead">
-            Move back into ChatGPT for this workflow. Validate the highest-impact assumptions with
-            sourced research, then decide what should be applied to the workbook.
+            Stay inside ChatGPT for Google Sheets or Excel. First explain what is in each tab, then
+            validate the assumptions and add clickable source links next to the rationale.
           </p>
         </div>
 
@@ -72,19 +72,19 @@
           <article class="io-card">
             <span>Inputs</span>
             <ul>
-              <li>The DCF model summary and assumption table from Workflow 2</li>
-              <li>Source files or exports that explain the current assumptions</li>
-              <li>ChatGPT with Research/Search enabled</li>
-              <li>Internal country, regional, and cash flow context</li>
+              <li>The DCF workbook from Workflow 2</li>
+              <li>Assumption, rationale, and review-status fields in the workbook</li>
+              <li>The Workflow 1 finance story, brief, and open questions</li>
+              <li>ChatGPT for Google Sheets or Excel</li>
             </ul>
           </article>
           <article class="io-card">
             <span>Outputs</span>
             <ul>
-              <li>A validation table with old value, recommended value, and as-of date</li>
-              <li>Source links and rationale for material updates</li>
-              <li>Confidence and human review status for each key assumption</li>
-              <li>A clear list of approved workbook updates for Workflow 4</li>
+              <li>A plain-English explanation of what each workbook tab contains</li>
+              <li>Validated assumptions with recommended updates where needed</li>
+              <li>A clickable external source link column next to each rationale</li>
+              <li>Confidence, as-of date, and human review status for each assumption</li>
             </ul>
           </article>
         </div>
@@ -93,9 +93,9 @@
           <div class="workflow-header compact-heading">
             <div class="section-heading">
               <p class="eyebrow">Step by step</p>
-              <h2>Validate the assumptions</h2>
+              <h2>Run the workbook validation</h2>
             </div>
-            <span data-progress-count>0 of 4 completed</span>
+            <span data-progress-count>0 of 2 completed</span>
           </div>
           <ol class="workflow-steps">
             <li>
@@ -104,8 +104,27 @@
               </label>
               <span>Step 1</span>
               <div>
-                <h3>Open ChatGPT</h3>
-                <p>Upload or paste the model summary, assumption table, and source context from the DCF workflow.</p>
+                <h3>Explain each tab</h3>
+                <p>Open the workbook. In Google Sheets, click Extensions. In Excel, click Plugins. Open ChatGPT, then run the prompt below.</p>
+                <article class="prompt-block featured-prompt">
+                  <div class="prompt-header">
+                    <div>
+                      <span class="step-chip">Copy prompt</span>
+                      <h3>Explain Workbook Tabs</h3>
+                    </div>
+                    <button class="copy-button" data-copy-target="prompt-tabs">Copy</button>
+                  </div>
+                  <pre id="prompt-tabs"><code>Review this workbook and explain what is in each tab.
+
+For each tab, summarize:
+- purpose
+- key source data or inputs
+- calculated outputs
+- assumptions or rationale fields
+- anything incomplete, confusing, or needing human review
+
+Do not edit the workbook in this step. Keep the explanation concise and finance-readable.</code></pre>
+                </article>
               </div>
             </li>
             <li>
@@ -114,18 +133,8 @@
               </label>
               <span>Step 2</span>
               <div>
-                <h3>Use Research/Search or an approved finance source</h3>
-                <p>Validate external inputs like weather demand, FX, inflation, interest rates, and discount-rate context.</p>
-              </div>
-            </li>
-            <li>
-              <label class="workflow-step-check">
-                <input type="checkbox" data-progress-item="validate-step-3" aria-label="Mark step 3 complete">
-              </label>
-              <span>Step 3</span>
-              <div>
-                <h3>Paste the prompt below</h3>
-                <p>Ask ChatGPT for a validation table and a clear recommendation, not a workbook edit.</p>
+                <h3>Validate assumptions and add source links</h3>
+                <p>Ask ChatGPT to research each assumption, recommend changes when needed, and add clickable source links next to each rationale.</p>
                 <article class="prompt-block featured-prompt">
                   <div class="prompt-header">
                     <div>
@@ -134,30 +143,21 @@
                     </div>
                     <button class="copy-button" data-copy-target="prompt-validate">Copy</button>
                   </div>
-                  <pre id="prompt-validate"><code>Use the DCF summary, assumptions, and source files to validate the key assumptions.
+                  <pre id="prompt-validate"><code>Validate all assumptions in this workbook.
 
-Use Research/Search, or an approved finance source, to check:
-- heat or weather demand
-- FX and margin pressure
-- inflation or interest-rate pressure
-- regional trend durability
-- free cash flow conversion
-- discount rate and terminal growth
+Find every assumption, rationale, and review-status field across the model. For each assumption:
+- compare the current value to the source data and the Workflow 1 finance story
+- use external research where needed to validate or improve the assumption
+- recommend an updated value when the evidence supports a change
+- explain the rationale in plain language
+- add a column immediately next to each rationale called External source link
+- put an externally clickable link to the data source in that column
+- add or update source name, as-of date, confidence, and human review status
 
-Do not edit the workbook. Create a validation table with assumption, current value, recommended value, source, as-of date, confidence, rationale, and human review status.
+Use formulas or workbook-native hyperlinks when possible so links are clickable from the sheet.
 
-End with the exact changes Finance should apply in the workbook, plus a favorable / unfavorable summary of likely model impact.</code></pre>
+Do not overwrite original assumptions without preserving the original value. Clearly mark any assumption that still needs Finance review.</code></pre>
                 </article>
-              </div>
-            </li>
-            <li>
-              <label class="workflow-step-check">
-                <input type="checkbox" data-progress-item="validate-step-4" aria-label="Mark step 4 complete">
-              </label>
-              <span>Step 4</span>
-              <div>
-                <h3>Approve what moves forward</h3>
-                <p>Decide which recommendations should be applied to the workbook in the next workflow.</p>
               </div>
             </li>
           </ol>
@@ -165,17 +165,17 @@ End with the exact changes Finance should apply in the workbook, plus a favorabl
 
         <div class="workflow-summary">
           <p class="eyebrow">Workflow</p>
-          <h2>Validate assumptions with sourced research and visible judgment.</h2>
+          <h2>Use the workbook assistant to inspect tabs and validate assumptions.</h2>
           <p>
-            The point is not to let research autopilot the model. The point is to use ChatGPT to
-            prepare sourced recommendations before any spreadsheet changes are made.
+            The goal is to keep validation close to the model: understand the workbook structure,
+            check the assumptions, and make source-backed updates visible in the sheet.
           </p>
         </div>
 
         <div class="callout">
           <strong>Human review moment:</strong>
-          A source link is not the same as approval. Use the confidence and review-status fields to
-          show where Finance still needs to make a judgment call.
+          A clickable source link is not the same as approval. Open a few sources, check the as-of
+          dates, and use the review-status fields to show where Finance still needs to decide.
         </div>
 
         <div class="lesson-actions">
