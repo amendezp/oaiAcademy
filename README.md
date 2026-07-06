@@ -7,7 +7,7 @@ Learners move through a guided journey:
 1. Setup: download files and prepare tools.
 2. Story: explain raw country and regional performance data in ChatGPT.
 3. Model: create a DCF model live in ChatGPT for Excel or Google Sheets.
-4. Validate: refresh assumptions with research or approved connectors and apply Finance house style.
+4. Validate: refresh assumptions with research or approved connectors.
 5. Dashboard: create a leadership-ready dashboard and briefing.
 6. Review: check accuracy, assumptions, and human judgment before sharing.
 
@@ -17,7 +17,7 @@ Learners move through a guided journey:
 - `setup.html` - setup checklist
 - `story.html` - raw-data story workflow
 - `model.html` - model creation workflow
-- `validate.html` - assumption validation and Finance house style workflow
+- `validate.html` - assumption validation workflow
 - `dashboard.html` - dashboard creation workflow
 - `review.html` - final review checklist
 - `styles.css` - visual styling
