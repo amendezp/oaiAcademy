@@ -31,6 +31,7 @@ Learners move through a guided journey:
 - `demo-files/chillnest_historical_pl.csv` - historical P&L
 - `demo-files/chillnest_historical_balance_sheet.csv` - historical balance sheet
 - `demo-files/chillnest_historical_cash_flow.csv` - historical cash flow statement
+- `demo-files/chillnest_finance_source_pack.zip` - bundled Finance journey source files
 
 ## Deploy To Vercel
 

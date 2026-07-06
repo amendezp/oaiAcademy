@@ -51,15 +51,15 @@
         <div class="checklist-card requirements-card">
           <div class="checklist-header">
             <h2>Requirements</h2>
-            <span data-progress-count>0 of 10 completed</span>
+            <span data-progress-count>0 of 3 completed</span>
           </div>
 
           <div class="requirement-list">
             <div class="requirement-row">
               <input id="setup-chatgpt" type="checkbox" data-progress-item="setup-chatgpt">
               <label class="requirement-main" for="setup-chatgpt">
-                <strong>ChatGPT workspace</strong>
-                <small>Use this for the story prompt and file-based analysis.</small>
+                <strong>ChatGPT</strong>
+                <small>ChatGPT is an AI assistant. Today we will use it to read files, explain performance, and draft finance-ready outputs.</small>
               </label>
               <a class="requirement-link" href="https://chatgpt.com/" target="_blank" rel="noreferrer">Open ChatGPT</a>
             </div>
@@ -67,90 +67,35 @@
             <div class="requirement-row">
               <input id="setup-sheets" type="checkbox" data-progress-item="setup-sheets">
               <label class="requirement-main" for="setup-sheets">
-                <strong>Google Sheets or Excel</strong>
-                <small>Use this for the DCF model, validation refresh, and dashboard.</small>
+                <strong>ChatGPT for Excel or Google Sheets</strong>
+                <small>Install ChatGPT in your spreadsheet app. Then open Excel or Google Sheets, sign in, and confirm ChatGPT appears in the workbook sidebar.</small>
               </label>
-              <a class="requirement-link" href="https://sheets.new/" target="_blank" rel="noreferrer">Open Sheet</a>
+              <a class="requirement-link" href="https://chatgpt.com/apps/spreadsheets/" target="_blank" rel="noreferrer">Install add-in</a>
             </div>
 
-            <div class="requirement-row">
-              <input id="setup-profile-pdf" type="checkbox" data-progress-item="setup-profile-pdf">
-              <label class="requirement-main" for="setup-profile-pdf">
-                <strong>ChillNest company profile</strong>
-                <small>One-page company overview for business context.</small>
+            <div class="requirement-row requirement-row-large">
+              <input id="setup-files" type="checkbox" data-progress-item="setup-files">
+              <label class="requirement-main" for="setup-files">
+                <strong>Download ChillNest files</strong>
+                <small>Download one ZIP with every source file. Unzip it, upload the profile and notes to ChatGPT, and import the CSV files into one workbook.</small>
+                <span class="file-list-title">Included files</span>
+                <ul class="file-list">
+                  <li><b>Company profile PDF/TXT:</b> business context and upload-friendly text.</li>
+                  <li><b>Country performance CSV:</b> revenue, plan, margin, ROAS, returns, logistics, and stockouts.</li>
+                  <li><b>Monthly regional performance CSV:</b> trend, seasonality, working capital, and free cash flow context.</li>
+                  <li><b>Operating notes TXT:</b> Finance, Marketing, Supply Chain, and Support context.</li>
+                  <li><b>Historical statements CSVs:</b> P&amp;L, balance sheet, and cash flow for the DCF.</li>
+                </ul>
               </label>
-              <a class="requirement-link" href="./demo-files/chillnest_company_profile.pdf" download>Download PDF</a>
-            </div>
-
-            <div class="requirement-row">
-              <input id="setup-profile-txt" type="checkbox" data-progress-item="setup-profile-txt">
-              <label class="requirement-main" for="setup-profile-txt">
-                <strong>Company profile text</strong>
-                <small>Plain-text version for uploading into ChatGPT.</small>
-              </label>
-              <a class="requirement-link" href="./demo-files/chillnest_company_profile.txt" download>Download TXT</a>
-            </div>
-
-            <div class="requirement-row">
-              <input id="setup-country" type="checkbox" data-progress-item="setup-country">
-              <label class="requirement-main" for="setup-country">
-                <strong>Country performance data</strong>
-                <small>Revenue, plan, margin, ROAS, returns, logistics, and stockouts.</small>
-              </label>
-              <a class="requirement-link" href="./demo-files/chillnest_country_performance.csv" download>Download CSV</a>
-            </div>
-
-            <div class="requirement-row">
-              <input id="setup-region" type="checkbox" data-progress-item="setup-region">
-              <label class="requirement-main" for="setup-region">
-                <strong>Monthly regional performance</strong>
-                <small>Trend, seasonality, working capital, and free cash flow context.</small>
-              </label>
-              <a class="requirement-link" href="./demo-files/chillnest_monthly_region_performance.csv" download>Download CSV</a>
-            </div>
-
-            <div class="requirement-row">
-              <input id="setup-notes" type="checkbox" data-progress-item="setup-notes">
-              <label class="requirement-main" for="setup-notes">
-                <strong>Operating notes</strong>
-                <small>Context from Finance, Marketing, Supply Chain, and Support.</small>
-              </label>
-              <a class="requirement-link" href="./demo-files/chillnest_operating_notes.txt" download>Download TXT</a>
-            </div>
-
-            <div class="requirement-row">
-              <input id="setup-pl" type="checkbox" data-progress-item="setup-pl">
-              <label class="requirement-main" for="setup-pl">
-                <strong>Historical P&amp;L</strong>
-                <small>Revenue, gross margin, operating expense, EBITDA, EBIT, and net income.</small>
-              </label>
-              <a class="requirement-link" href="./demo-files/chillnest_historical_pl.csv" download>Download CSV</a>
-            </div>
-
-            <div class="requirement-row">
-              <input id="setup-bs" type="checkbox" data-progress-item="setup-bs">
-              <label class="requirement-main" for="setup-bs">
-                <strong>Historical balance sheet</strong>
-                <small>Cash, inventory, working capital, debt, equity, and assets.</small>
-              </label>
-              <a class="requirement-link" href="./demo-files/chillnest_historical_balance_sheet.csv" download>Download CSV</a>
-            </div>
-
-            <div class="requirement-row">
-              <input id="setup-cf" type="checkbox" data-progress-item="setup-cf">
-              <label class="requirement-main" for="setup-cf">
-                <strong>Historical cash flow</strong>
-                <small>Operating cash flow, capex, free cash flow, debt activity, and cash.</small>
-              </label>
-              <a class="requirement-link" href="./demo-files/chillnest_historical_cash_flow.csv" download>Download CSV</a>
+              <a class="requirement-link" href="./demo-files/chillnest_finance_source_pack.zip" download>Download ZIP</a>
             </div>
           </div>
         </div>
 
         <div class="callout">
           <strong>Tip:</strong>
-          Import the CSV files into one workbook before starting the model step. Keep the PDF or TXT
-          profile available for the first ChatGPT prompt.
+          Use ChatGPT for the first story prompt. Use ChatGPT for Excel or Google Sheets for the
+          DCF, assumption refresh, and dashboard steps.
         </div>
 
         <div class="lesson-actions">

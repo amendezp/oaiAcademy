@@ -645,9 +645,18 @@ body > footer {
   background: #ffffff;
 }
 
+.requirement-row-large {
+  align-items: start;
+}
+
+.requirement-row-large .requirement-link {
+  margin-top: 4px;
+}
+
 .requirement-row input {
   width: 18px;
   height: 18px;
+  margin-top: 3px;
   accent-color: var(--aqua-dark);
 }
 
@@ -663,6 +672,27 @@ body > footer {
 
 .requirement-main small {
   color: var(--muted);
+}
+
+.file-list-title {
+  margin-top: 12px;
+  color: var(--aqua-dark);
+  font-size: 12px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.file-list {
+  display: grid;
+  gap: 6px;
+  margin: 2px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.file-list b {
+  color: var(--ink);
 }
 
 .requirement-link {
