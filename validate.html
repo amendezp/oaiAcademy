@@ -75,44 +75,44 @@
           </div>
           <pre id="prompt-validate"><code>Run an Assumption Validation + Model Refresh workflow on this workbook.
 
-Use the DCF model you just created. Do not create a new file.
+Workflow: ChatGPT for Sheets Assumption Validation + Model Refresh using the Research/Search connector. If an approved finance-data connector is available, use it for market, FX, rate, or inflation data. Do not create a new file.
 
-Use the Research/Search connector or any approved finance-data connector available in this environment.
+Use the DCF model you just created. Focus on the assumptions most likely to move valuation in a 10-minute demo:
+- weather_demand_lift for the largest revenue countries or regions
+- FX_margin_adjustment for non-US markets with margin pressure
+- inflation_or_interest_rate_cost_adjustment for logistics, working capital, and discount-rate context
+- regional_trend_adjustment using the monthly regional performance file
+- free_cash_flow_conversion_adjustment using the historical cash flow statement and working-capital trend
+- discount_rate and terminal_growth_rate reasonableness
 
-Step 1: Identify the key assumption inputs by country and region:
-- weather_demand_lift
-- FX_margin_adjustment
-- inflation_or_interest_rate_cost_adjustment
-- return_rate_adjustment
-- logistics_cost_adjustment
-- regional_trend_adjustment
-- free_cash_flow_conversion_adjustment
-- demand_confidence
+Step 1: Locate the current assumption input cells and review fields. Do not overwrite formulas, calculated outputs, or formatting.
 
-Step 2: Validate those assumptions with trusted external sources:
-- weather or heatwave signal: NASA POWER, Open-Meteo, NOAA, or another weather source
-- FX or currency movement: FRED, ECB, a central bank, or reliable market-data source
-- inflation or interest-rate pressure: World Bank, OECD, FRED, or country central banks
-- ecommerce demand signal: Google Trends or another available demand signal
-- region-level trend: compare against the monthly regional performance file before treating June as durable
-- free cash flow conversion: validate whether inventory investment and working-capital pressure are timing issues or recurring cash conversion risks
+Step 2: Validate assumptions with trusted sources:
+- heat or weather signal: NASA POWER, Open-Meteo, NOAA, or another credible weather source
+- FX or currency movement: FRED, ECB, country central bank, or reliable market-data source
+- inflation or interest-rate pressure: World Bank, OECD, FRED, or country central bank
+- demand signal: Google Trends or another available ecommerce demand signal
+- internal trend: compare June performance to the monthly regional performance file before treating demand as durable
+- cash conversion: compare inventory investment, working capital, capex, operating cash flow, and free cash flow before treating growth as value-creating
 
 Step 3: Update only assumption input cells and validation fields.
-Do not overwrite formulas, calculated outputs, or formatting unless needed.
 
-Step 4: For every updated assumption, add:
+For every updated assumption, add:
 - source name
 - source link
 - as-of date
+- old value
+- new value
+- valuation impact direction: favorable, unfavorable, or neutral
 - confidence level: High, Medium, or Low
 - human review status: Approved, Needs Review, or Do Not Use
 - short rationale
 
-Step 5: Recalculate the forecast outputs and explain what changed:
-- which countries moved up or down in investment priority
-- which regions changed in forecast or DCF-readiness
-- which assumptions had the largest impact
-- which assumptions still require Finance review before the dashboard is shared
+Step 4: Recalculate the forecast outputs and create a short change log:
+- countries that moved up or down in investment priority
+- regions that changed in forecast or DCF-readiness
+- assumptions with the largest valuation impact
+- assumptions that still require Finance review before the dashboard is shared
 
 Do not present externally sourced assumptions as final unless the human review status is Approved.</code></pre>
         </article>
@@ -141,6 +141,8 @@ Apply these Finance interpretation rules:
 - Treat recurring return-rate issues, logistics-cost pressure, weak ROAS, FX margin pressure, and stockouts as higher-priority risks than one-time demand spikes.
 - Classify each country's variance driver as demand, execution, timing, mix, pricing, returns, logistics, FX, or inventory availability.
 - Distinguish "what happened" from "what leadership needs to decide."
+- Avoid generic commentary. Replace phrases like "strong performance" with the specific driver and implication.
+- Separate actuals, forecast assumptions, and externally validated assumptions.
 - Keep commentary direct, concise, and leadership-ready.
 - Use source citations for every material number, claim, or externally validated assumption.
 
@@ -161,6 +163,7 @@ Then summarize the refinements:
 - top 3 favorable drivers
 - top 3 unfavorable drivers
 - countries that should be invested in, tested, held, or paused
+- decisions leadership needs to make
 - items Finance must review before the dashboard is shared</code></pre>
         </article>
 

@@ -74,25 +74,27 @@
             </div>
             <button class="copy-button" data-copy-target="prompt-story">Copy</button>
           </div>
-          <pre id="prompt-story"><code>Act as a finance analyst.
+          <pre id="prompt-story"><code>Act as a finance analyst preparing a first-pass readout for a cross-functional Finance audience.
 
 Use the uploaded ChillNest company profile, country performance data, monthly regional performance data, operating notes, historical P&amp;L, balance sheet, and cash flow statement.
 
-Tell me the story behind the raw data. Do not just summarize rows.
+Goal: tell the business story behind the raw data and identify what the DCF should test. Do not build the model yet. Do not summarize row by row.
 
-Separate:
-- revenue growth
-- profitable growth
-- regional trend and seasonality
-- cash flow or DCF-relevant signals
-- historical P&amp;L, balance sheet, and cash flow context
-- operational risk
-- country-level drivers
-- items that require human verification before leadership sees the analysis
+Produce:
+1. Executive readout: 5 bullets max on what is happening, where it is happening, and why it matters.
+2. Quality of growth: separate revenue growth, gross margin, contribution profit, ROAS, return rate, logistics cost, stockouts, and free cash flow conversion.
+3. Regional and country drivers: rank the top 3 sources of upside and the top 3 sources of risk.
+4. Cash and DCF signals: explain what the historical statements imply for working capital, capex, and free cash flow.
+5. Data quality and verification log: list items that need human review before leadership sees the analysis.
 
-For each material claim, point to the source file or field that supports it.
+Finance interpretation rules:
+- Show country-level revenue, marketing spend, and contribution profit in $K.
+- Show portfolio totals in $M, rounded to one decimal place.
+- Use favorable / unfavorable language instead of positive / negative.
+- Separate timing issues from recurring performance issues.
+- Cite the source file and field for every material number or claim.
 
-End with 5 finance questions this analysis should answer in the DCF model, including at least one question about forecast durability, one question about free cash flow conversion, and one question about working capital.</code></pre>
+End with 5 model questions the DCF must answer, including forecast durability, free cash flow conversion, working capital, discount rate sensitivity, and which countries deserve more investment.</code></pre>
         </article>
 
         <div class="callout">

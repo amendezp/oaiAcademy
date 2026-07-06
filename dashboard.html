@@ -76,9 +76,9 @@
           </div>
           <pre id="prompt-dashboard"><code>Create a leadership-ready finance dashboard from the refreshed ChillNest DCF model.
 
-Workflow: Leadership Dashboard Creation.
+Workflow: ChatGPT for Sheets Leadership Dashboard Creation.
 
-Build a new dashboard view in this workbook using a clean executive layout with panels.
+Build a new dashboard view in this workbook using a clean executive layout with panels. Do not overwrite the underlying model formulas.
 
 Top row: create high-level KPI cards for:
 - Revenue
@@ -88,31 +88,34 @@ Top row: create high-level KPI cards for:
 - Budget vs. Actual
 
 Use actual workbook values where available. Use the historical statements for free cash flow, cash, debt, capex, and DCF outputs. Use the monthly regional performance file for regional trend, budget vs. actual, free cash flow, and DCF-ready context.
-If Burn Rate, Runway, or any other KPI is not meaningful because the company is cash-flow positive, label it "Not applicable - positive FCF." If a KPI is not available in the source data, create a clearly labeled placeholder panel with a sample number and mark it "Placeholder - needs source data." Do not imply placeholder values are real.
 
-Dashboard sections:
-- KPI summary panel with current value, plan or target, variance, and favorable / unfavorable status
-- Country performance panel ranked by investment priority: Invest, Test, Hold, or Pause
-- Budget vs. Actual panel showing revenue and contribution profit variance
-- Regional trend panel showing monthly revenue, gross margin, and free cash flow by region
-- DCF panel showing enterprise value, net debt, implied equity value, and key valuation assumptions
-- Scenario panel showing base, upside, and downside forecast
-- Assumption review panel showing items marked Needs Review or Do Not Use
-- Key takeaways panel with the top 5 leadership insights
-- Action panel with recommended next steps for Finance, Marketing, and Supply Chain
+If Burn Rate, Runway, or another KPI is not meaningful because ChillNest is cash-flow positive, label it "Not applicable - positive FCF." If a KPI is not available in the source data, create a clearly labeled placeholder panel with a sample number and mark it "Placeholder - needs source data." Do not imply placeholder values are real.
+
+Create these dashboard sections:
+1. KPI summary: current value, plan or target, variance, and favorable / unfavorable status.
+2. Regional trend: monthly revenue, gross margin, and free cash flow by region.
+3. Country priorities: Invest, Test, Hold, or Pause, with the driver behind the classification.
+4. DCF valuation: enterprise value, net debt, implied equity value, discount rate, and terminal growth.
+5. Scenario view: base, upside, and downside forecast.
+6. Assumption review: items marked Needs Review or Do Not Use.
+7. Leadership takeaways: top 5 insights and recommended decisions for Finance, Marketing, and Supply Chain.
+
+Add at least three visuals:
+- regional revenue and free cash flow trend
+- country investment priority or contribution profit ranking
+- DCF sensitivity or scenario comparison
 
 Design requirements:
-- Use a clean layout with clear panels, readable labels, and consistent formatting
-- Use $K for country-level values and $M for portfolio totals
-- Use green only for favorable variance and red only for unfavorable variance
-- Keep text short enough for a Finance leader to scan in under 60 seconds
-- Make placeholder metrics visually distinct from source-backed metrics
+- Use a clean layout with clear panels, readable labels, and consistent formatting.
+- Use $K for country-level values and $M for portfolio totals.
+- Use green only for favorable variance and red only for unfavorable variance.
+- Keep text short enough for a Finance leader to scan in under 60 seconds.
+- Make placeholder metrics visually distinct from source-backed metrics.
 
 Accuracy requirements:
-- Add a small source / review note for each KPI panel
-- Show which metrics are source-backed, calculated, or placeholder
-- Do not hide assumptions that require human review
-- Do not overwrite the underlying model formulas
+- Add a small source / review note for each KPI panel.
+- Show whether each metric is source-backed, calculated, externally validated, or placeholder.
+- Do not hide assumptions that require human review.
 
 After creating the dashboard, write a concise leadership brief:
 - headline
